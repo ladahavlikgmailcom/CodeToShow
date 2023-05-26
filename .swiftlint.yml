@@ -1,0 +1,12 @@
+included:
+    - CodeToShow
+    - CodeToShowTests
+    - CodeToShowUITests
+
+identifier_name:
+    min_length: 2
+    excluded:
+        - id
+        - vm
+nesting:
+    type_level: 4
