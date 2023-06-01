@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 
 class RocketViewModel: ObservableObject {
 
@@ -18,6 +19,7 @@ class RocketViewModel: ObservableObject {
 
     private var loader: ModelLoader = ModelLoader<RocketModel>(path: .rockets)
     var id: String
+    var observer: AnyCancellable?
 
     // MARK: - Initializer
 
@@ -35,14 +37,11 @@ class RocketViewModel: ObservableObject {
     // MARK: - Data functions
 
     private func loadData() {
-        loader.loadModel(id: id) { result in
-            Task {
-                await self.handleData(apiData: try result.get())
+        observer = loader.loadModel(id: id)
+            .receive(on: DispatchQueue.main)
+            .sink { _ in } receiveValue: { [weak self] data in
+                guard let self else { return }
+                self.data = data
             }
-        }
-    }
-
-    @MainActor private func handleData(apiData: RocketModel) {
-        self.data = apiData
     }
 }

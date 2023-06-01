@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 
 class CrewDetailViewModel: ObservableObject {
 
@@ -18,6 +19,7 @@ class CrewDetailViewModel: ObservableObject {
 
     private var loader: ModelLoader = ModelLoader<CrewModel>(path: .crew)
     var crew: Crew
+    var observer: AnyCancellable?
 
     // MARK: - Initializer
 
@@ -35,14 +37,11 @@ class CrewDetailViewModel: ObservableObject {
     // MARK: - Data functions
 
     private func loadData() {
-        loader.loadModel(id: crew.crew) { result in
-            Task {
-                await self.handleData(apiData: try result.get())
+        observer = loader.loadModel(id: crew.crew)
+            .receive(on: DispatchQueue.main)
+            .sink { _ in } receiveValue: { [weak self] data in
+                guard let self else { return }
+                self.data = data
             }
-        }
-    }
-
-    @MainActor private func handleData(apiData: CrewModel) {
-        self.data = apiData
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 
 class LaunchesListViewModel: ObservableObject {
 
@@ -30,6 +31,8 @@ class LaunchesListViewModel: ObservableObject {
         }
     }
 
+    var observer: AnyCancellable?
+
     // MARK: - Initializer
 
     init() {
@@ -39,28 +42,21 @@ class LaunchesListViewModel: ObservableObject {
     // MARK: - Data functions
 
     func loadData() {
-        loader.loadModel { result in
-            switch result {
-            case .success(let starlinkModel):
-                Task {
-                    await self.processData(data: starlinkModel)
+        observer = loader.loadModel()
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] completion in
+                guard let self else { return }
+                switch completion {
+                case .failure(let error):
+                    errorModel = error
+                case .finished: break
                 }
-            case .failure(let errorModel):
-                Task {
-                    await self.processError(error: errorModel)
-                }
+            } receiveValue: { [weak self] data in
+                guard let self else { return }
+                rawData = data
+                filterData()
             }
-        }
         errorModel = nil
-    }
-
-    @MainActor func processData(data: [StarlinkModel]) {
-        rawData = data
-        filterData()
-    }
-
-    @MainActor func processError(error: ErrorModel) {
-        errorModel = error
     }
 
     /// filter data to show by search text
