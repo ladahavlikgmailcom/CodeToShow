@@ -40,7 +40,8 @@ class ModelLoader<Model: Decodable> {
             return
         }
 
-        Networking().callAPI(urlRequest: urlRequest) { result in
+        Networking().callAPI(urlRequest: urlRequest) { [weak self] result in
+            guard let self else { return }
             switch result {
             case .success(let data):
                 self.decodeData(data: data, handler: handler)
