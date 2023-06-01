@@ -7,13 +7,14 @@
 //
 
 import SwiftUI
+import Combine
 
 class ModelLoader<Model: Decodable> {
 
     // MARK: - Local Variables
 
     // Returning structure
-    typealias Handler = (Result<Model, ErrorModel>) -> Void
+    typealias FutureHandler = Future<Model, ErrorModel>
 
     // API Path
     var path: ComponentPathsEnum
@@ -27,26 +28,28 @@ class ModelLoader<Model: Decodable> {
     // MARK: - Load data
 
     /// load data from API
-    func loadModel(id: String? = nil, handler: @escaping Handler) {
-        guard let urlRequest = URLRequest.createRequest(path: path, id: id) else {
-            handler(
-                .failure(
-                    ErrorModel(
-                        errorPicture: Image(systemName: "questionmark.circle.fill"),
-                        errorText: "Appear unexpected error in loading model."
+    func loadModel(id: String? = nil) -> FutureHandler {
+        Future { [weak self] promise in
+            guard let self, let urlRequest = URLRequest.createRequest(path: path, id: id) else {
+                promise(
+                    .failure(
+                        ErrorModel(
+                            errorPicture: Image(systemName: "questionmark.circle.fill"),
+                            errorText: "Appear unexpected error in loading model."
+                        )
                     )
                 )
-            )
-            return
-        }
+                return
+            }
 
-        Networking().callAPI(urlRequest: urlRequest) { [weak self] result in
-            guard let self else { return }
-            switch result {
-            case .success(let data):
-                self.decodeData(data: data, handler: handler)
-            case .failure(let errorModel):
-                handler(.failure(errorModel))
+            Networking().callAPI(urlRequest: urlRequest) { [weak self] result in
+                guard let self else { return }
+                switch result {
+                case .success(let data):
+                    self.decodeData(data: data, promise: promise)
+                case .failure(let errorModel):
+                    promise(.failure(errorModel))
+                }
             }
         }
     }
@@ -54,12 +57,13 @@ class ModelLoader<Model: Decodable> {
     // MARK: - Decoding data
 
     /// decode Data into application Model
-    private func decodeData(data: Data, handler: Handler) {
+
+    private func decodeData(data: Data, promise: (Result<Model, ErrorModel>) -> Void) {
         do {
             let model = try JSONDecoder.spaceXDecoder().decode(Model.self, from: data)
-            handler(.success(model))
+            promise(.success(model))
         } catch {
-            handler(
+            promise(
                 .failure(
                     ErrorModel(
                         errorPicture: Image(systemName: "exclamationmark.triangle.fill"),
