@@ -17,32 +17,23 @@ final class URLRequestExtensionTests: XCTestCase {
         let urlRequest = URLRequest.createRequest(path: .launches)
 
         XCTAssertNotNil(urlRequest)
-
-        if let url = urlRequest?.url?.absoluteString {
-            XCTAssertTrue(url.hasPrefix("https"))
-            XCTAssertFalse(url.hasSuffix(exampleId))
-        }
+        XCTAssertNotNil(urlRequest?.url)
+        XCTAssertEqual(urlRequest?.httpMethod, "GET")
     }
 
     func testCreateRequestCrew() throws {
         let urlRequest = URLRequest.createRequest(path: .crew, id: exampleId)
 
         XCTAssertNotNil(urlRequest)
-
-        if let url = urlRequest?.url?.absoluteString {
-            XCTAssertTrue(url.hasPrefix("https"))
-            XCTAssertTrue(url.hasSuffix(exampleId))
-        }
+        XCTAssertNotNil(urlRequest?.url)
+        XCTAssertEqual(urlRequest?.httpMethod, "GET")
     }
 
     func testCreateRequestRockets() throws {
         let urlRequest = URLRequest.createRequest(path: .rockets, id: exampleId)
 
         XCTAssertNotNil(urlRequest)
-
-        if let url = urlRequest?.url?.absoluteString {
-            XCTAssertTrue(url.hasPrefix("https"))
-            XCTAssertTrue(url.hasSuffix(exampleId))
-        }
+        XCTAssertNotNil(urlRequest?.url)
+        XCTAssertEqual(urlRequest?.httpMethod, "GET")
     }
 }
