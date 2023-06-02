@@ -23,6 +23,8 @@
 		0783F5B82A20B04D001634C7 /* CodeToShowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783F5B72A20B04D001634C7 /* CodeToShowUITestsLaunchTests.swift */; };
 		0783F5BF2A20BF35001634C7 /* LaunchesListViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783F5BE2A20BF35001634C7 /* LaunchesListViewUITests.swift */; };
 		0783F5C12A20C618001634C7 /* LaunchDetailViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0783F5C02A20C618001634C7 /* LaunchDetailViewUITests.swift */; };
+		078CA2962A2A05FC009DB6AD /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078CA2952A2A05FC009DB6AD /* URLExtension.swift */; };
+		078CA2982A2A0F1E009DB6AD /* URLExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078CA2972A2A0F1E009DB6AD /* URLExtensionTests.swift */; };
 		07AF72A82A1F9E4C0061A976 /* BoolExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF72A72A1F9E4C0061A976 /* BoolExtensionTests.swift */; };
 		07AF72AA2A1FA3440061A976 /* URLRequestExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF72A92A1FA3440061A976 /* URLRequestExtensionTests.swift */; };
 		07AF72AC2A1FA8AB0061A976 /* JSONDecoderExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF72AB2A1FA8AB0061A976 /* JSONDecoderExtensionTests.swift */; };
@@ -96,6 +98,8 @@
 		0783F5B72A20B04D001634C7 /* CodeToShowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeToShowUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0783F5BE2A20BF35001634C7 /* LaunchesListViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesListViewUITests.swift; sourceTree = "<group>"; };
 		0783F5C02A20C618001634C7 /* LaunchDetailViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewUITests.swift; sourceTree = "<group>"; };
+		078CA2952A2A05FC009DB6AD /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		078CA2972A2A0F1E009DB6AD /* URLExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtensionTests.swift; sourceTree = "<group>"; };
 		07AF729E2A1F9DE50061A976 /* CodeToShowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeToShowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AF72A72A1F9E4C0061A976 /* BoolExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtensionTests.swift; sourceTree = "<group>"; };
 		07AF72A92A1FA3440061A976 /* URLRequestExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExtensionTests.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 			children = (
 				07AF72A72A1F9E4C0061A976 /* BoolExtensionTests.swift */,
 				07AF72AB2A1FA8AB0061A976 /* JSONDecoderExtensionTests.swift */,
+				078CA2972A2A0F1E009DB6AD /* URLExtensionTests.swift */,
 				07AF72A92A1FA3440061A976 /* URLRequestExtensionTests.swift */,
 			);
 			path = Extensions;
@@ -335,6 +340,7 @@
 			children = (
 				07803AF72A1F844700028F45 /* BoolExtension.swift */,
 				07B2A8D82A1CCAF400B16A4F /* JSONDecoderExtension.swift */,
+				078CA2952A2A05FC009DB6AD /* URLExtension.swift */,
 				07B2A8E42A1CDD6900B16A4F /* URLRequestExtension.swift */,
 			);
 			path = Extensions;
@@ -554,6 +560,7 @@
 				07AF72AC2A1FA8AB0061A976 /* JSONDecoderExtensionTests.swift in Sources */,
 				07AF72A82A1F9E4C0061A976 /* BoolExtensionTests.swift in Sources */,
 				0783F5AA2A20A94C001634C7 /* ComponentPathsEnumTests.swift in Sources */,
+				078CA2982A2A0F1E009DB6AD /* URLExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +606,7 @@
 				07803AF02A1F6E6200028F45 /* CrewView.swift in Sources */,
 				07B2A8E32A1CD6A000B16A4F /* ErrorModel.swift in Sources */,
 				07803AE32A1F66A200028F45 /* LaunchDetailView.swift in Sources */,
+				078CA2962A2A05FC009DB6AD /* URLExtension.swift in Sources */,
 				07B2A8DD2A1CD1D200B16A4F /* ModelLoader.swift in Sources */,
 				07C92A1F2A21044800FE55EC /* Isp.swift in Sources */,
 				07803AE12A1F5BE100028F45 /* ErrorView.swift in Sources */,
