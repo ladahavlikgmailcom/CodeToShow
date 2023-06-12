@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Implementation of "orientationDidChangeNotification" into application.
 struct DeviceRotationViewModifier: ViewModifier {
 
     // MARK: - Local variable
@@ -28,7 +29,9 @@ struct DeviceRotationViewModifier: ViewModifier {
 // MARK: - View extension
 
 extension View {
-    /// catch rotation notification and retun if isLandscape
+    /// Catch rotation notification and retun if isLandscape.
+    /// - Parameter action: Completion handler to process changed value.
+    /// - Returns: some View with changed content respect orientation.
     func onRotate(perform action: @escaping (Bool) -> Void) -> some View {
         self.modifier(DeviceRotationViewModifier(action: action))
     }

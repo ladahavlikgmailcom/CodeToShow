@@ -10,7 +10,11 @@ import SwiftUI
 
 extension URL {
 
-    /// Create url for path and id if necessary
+    /// Create url for path and id if necessary.
+    /// - Parameters:
+    ///   - path: ComponentPath where to ask for data.
+    ///   - id: Optional parameter for concrete item is asked.
+    /// - Returns: Return URL Request with completed path to API
     static func createURL(path: ComponentPathsEnum, id: String? = nil) -> URL? {
         // prepare path and optional id to request
         var pathString = path.rawValue

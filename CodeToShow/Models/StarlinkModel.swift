@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Data model of Starlink launches. It's for "/v5/launches/" API.
 class StarlinkModel: Codable, Hashable {
 
     // MARK: - Structure

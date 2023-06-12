@@ -10,7 +10,7 @@ import SwiftUI
 
 extension Bool? {
 
-    /// create success string from nullable Bool value.
+    /// Create "success" string from nullable Bool value.
     func handleSuccess() -> String {
         var successText = "Not known"
         if let success = self {

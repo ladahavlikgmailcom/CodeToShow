@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+///  Custom error model for application.
 struct ErrorModel: Error {
 
     // MARK: - Structure

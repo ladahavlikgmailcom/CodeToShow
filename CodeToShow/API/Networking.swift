@@ -8,9 +8,13 @@
 
 import SwiftUI
 
+/// Part where application contact API.
 class Networking {
 
     /// Provide call to API by Request and return data of error
+    /// - Parameters:
+    ///   - urlRequest: Direction to API with created full information where are data to fetch.
+    ///   - result: Return fetched data or error from asynchronous data task.
     func callAPI(urlRequest: URLRequest, result: @escaping (Result<Data, ErrorModel>) -> Void) {
         URLSession.shared.dataTask(with: urlRequest) { (data, _, error) in
             if let error {
