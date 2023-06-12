@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Data model of Crew for "/v4/crew/" API.
 class CrewModel: Codable {
 
     // MARK: - Structure

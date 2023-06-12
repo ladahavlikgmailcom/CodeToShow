@@ -9,6 +9,7 @@
 import SwiftUI
 import Combine
 
+/// Calling API and decode data in to desired model.
 class ModelLoader<Model: Decodable> {
 
     // MARK: - Local Variables
@@ -21,13 +22,17 @@ class ModelLoader<Model: Decodable> {
 
     // MARK: - Initializer
 
+    /// Create instance with path to data.
+    /// - Parameter path: part of path for data request
     init(path: ComponentPathsEnum) {
         self.path = path
     }
 
     // MARK: - Load data
 
-    /// load data from API
+    /// Load data from API
+    /// - Parameter id: Optional identifier of desired data.
+    /// - Returns: Publisher with data or error from API or decoding data.
     func loadModel(id: String? = nil) -> FutureHandler {
         Future { [weak self] promise in
             guard let self, let urlRequest = URLRequest.createRequest(path: path, id: id) else {
@@ -56,8 +61,10 @@ class ModelLoader<Model: Decodable> {
 
     // MARK: - Decoding data
 
-    /// decode Data into application Model
-
+    /// Decode Data into application Model
+    /// - Parameters:
+    ///   - data: Data fetched from API.
+    ///   - promise: Result for send decoded object to publisher.
     private func decodeData(data: Data, promise: (Result<Model, ErrorModel>) -> Void) {
         do {
             let model = try JSONDecoder.spaceXDecoder().decode(Model.self, from: data)

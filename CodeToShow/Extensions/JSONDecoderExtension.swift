@@ -11,6 +11,8 @@ import Foundation
 extension JSONDecoder {
 
     /// Special decoder for StarlinkModel
+    ///
+    /// In decoder is custom process for date values. In source data are three types of sources for Date type.
     static func spaceXDecoder() -> JSONDecoder {
         let decoder = JSONDecoder()
 

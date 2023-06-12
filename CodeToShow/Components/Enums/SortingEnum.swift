@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// Useable types of sorting data in application.
 enum SortingEnum: String, CaseIterable {
     case nameAscending = "Name Asc"
     case nameDescending = "Name Desc"

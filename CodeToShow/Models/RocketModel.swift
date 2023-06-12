@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Data model of Rocket values. It's for "/v4/rockets/" API.
 class RocketModel: Codable {
 
     // MARK: - Structure
