@@ -6,7 +6,7 @@
 //  Copyright © 2023 LHBnO. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 
 extension JSONDecoder {
 
