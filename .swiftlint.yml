@@ -10,3 +10,6 @@ identifier_name:
         - vm
 nesting:
     type_level: 4
+
+disabled_rules:
+    - redundant_optional_initialization

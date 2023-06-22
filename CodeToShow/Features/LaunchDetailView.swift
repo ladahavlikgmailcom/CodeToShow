@@ -102,10 +102,8 @@ struct LaunchDetailView: View {
 
 // MARK: - Previews
 
-struct LaunchDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationStack {
-            LaunchDetailView(data: StarlinkModel.mock())
-        }
+#Preview {
+    NavigationStack {
+        LaunchDetailView(data: StarlinkModel.mock())
     }
 }

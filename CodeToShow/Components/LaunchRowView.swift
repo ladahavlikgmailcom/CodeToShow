@@ -51,9 +51,7 @@ struct LaunchRowView: View {
 
 // MARK: - Previews
 
-struct LaunchRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        LaunchRowView(data: StarlinkModel.mock())
-            .padding()
-    }
+#Preview {
+    LaunchRowView(data: StarlinkModel.mock())
+        .padding()
 }

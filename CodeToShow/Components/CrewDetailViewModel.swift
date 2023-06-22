@@ -8,18 +8,21 @@
 
 import SwiftUI
 import Combine
+import Observation
 
-class CrewDetailViewModel: ObservableObject {
+@Observable class CrewDetailViewModel {
 
     // MARK: - Published variables
 
-    @Published var data: CrewModel?
+    var data: CrewModel? = nil
+
+    @ObservationIgnored
+    var crew: Crew
 
     // MARK: - Local variables
 
     private var loader: ModelLoader = ModelLoader<CrewModel>(path: .crew)
-    var crew: Crew
-    var observer: AnyCancellable?
+    private var observer: AnyCancellable? = nil
 
     // MARK: - Initializer
 

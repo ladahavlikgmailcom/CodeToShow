@@ -31,15 +31,13 @@ struct CrewView: View {
 
 // MARK: - Previews
 
-struct CrewView_Previews: PreviewProvider {
-    static var previews: some View {
-        ScrollView {
-            CrewView(crew: [
-                Crew(crew: "62dd7196202306255024d13c", role: "Commander"),
-                Crew(crew: "62dd71c9202306255024d13d", role: "Pilot"),
-                Crew(crew: "62dd7210202306255024d13e", role: "Mission Specialist 1"),
-                Crew(crew: "62dd7253202306255024d13f", role: "Mission Specialist 2")
-            ])
-        }
+#Preview {
+    ScrollView {
+        CrewView(crew: [
+            Crew(crew: "62dd7196202306255024d13c", role: "Commander"),
+            Crew(crew: "62dd71c9202306255024d13d", role: "Pilot"),
+            Crew(crew: "62dd7210202306255024d13e", role: "Mission Specialist 1"),
+            Crew(crew: "62dd7253202306255024d13f", role: "Mission Specialist 2")
+        ])
     }
 }

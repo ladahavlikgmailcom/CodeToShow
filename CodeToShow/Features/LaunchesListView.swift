@@ -12,7 +12,7 @@ struct LaunchesListView: View {
 
     // MARK: - ViewModel
 
-    @StateObject private var vm: LaunchesListViewModel = LaunchesListViewModel()
+    @Bindable var vm: LaunchesListViewModel = LaunchesListViewModel()
 
     // MARK: - Body part
 
@@ -68,8 +68,6 @@ struct LaunchesListView: View {
 
 // MARK: - Previews
 
-struct LaunchesListView_Previews: PreviewProvider {
-    static var previews: some View {
-        LaunchesListView()
-    }
+#Preview {
+    LaunchesListView()
 }

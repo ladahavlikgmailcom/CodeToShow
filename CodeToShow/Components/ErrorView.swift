@@ -34,14 +34,12 @@ struct ErrorView: View {
 
 // MARK: - Previews
 
-struct ErrorView_Previews: PreviewProvider {
-    static var previews: some View {
-        ErrorView(
-            data:
-                ErrorModel(
-                    errorPicture: Image(systemName: "exclamationmark.shield.fill"),
-                    errorText: "Sample error text to show."),
-            handler: {}
-        )
-    }
+#Preview {
+    ErrorView(
+        data:
+            ErrorModel(
+                errorPicture: Image(systemName: "exclamationmark.shield.fill"),
+                errorText: "Sample error text to show."),
+        handler: {}
+    )
 }
