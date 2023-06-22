@@ -8,30 +8,29 @@
 
 import SwiftUI
 import Combine
+import Observation
 
-class LaunchesListViewModel: ObservableObject {
+@Observable class LaunchesListViewModel: ObservableObject {
 
-    // MARK: - Published
+    // MARK: - Observed
 
-    @Published var dataModel: [StarlinkModel] = []
-    @Published var errorModel: ErrorModel?
-
-    // MARK: - AppStorage
-
-    @AppStorage("sortingByEnum") var sortingByEnum: SortingEnum = .flightNumberDescending
+    var dataModel: [StarlinkModel] = []
+    var errorModel: ErrorModel? = nil
+    var sortingByEnum: SortingEnum = .flightNumberDescending
 
     // MARK: - Local variables
 
     private var loader: ModelLoader = ModelLoader<[StarlinkModel]>(path: .launches)
     private var rawData: [StarlinkModel] = []
 
+    @ObservationIgnored
     var searchText: String = "" {
         didSet {
             filterData()
         }
     }
 
-    var observer: AnyCancellable?
+    var observer: AnyCancellable? = nil
 
     // MARK: - Initializer
 

@@ -12,7 +12,7 @@ struct RocketView: View {
 
     // MARK: - View Model
 
-    @ObservedObject var vm: RocketViewModel
+    var vm: RocketViewModel
 
     // MARK: - Initializer
 
@@ -51,8 +51,6 @@ struct RocketView: View {
 
 // MARK: - Previews
 
-struct RocketView_Previews: PreviewProvider {
-    static var previews: some View {
-        RocketView(data: RocketModel.mock())
-    }
+#Preview {
+    RocketView(data: RocketModel.mock())
 }

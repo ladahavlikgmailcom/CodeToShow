@@ -12,7 +12,7 @@ struct CrewDetailView: View {
 
     // MARK: - View Model
 
-    @ObservedObject var vm: CrewDetailViewModel
+    var vm: CrewDetailViewModel
 
     // MARK: - Initializer
 
@@ -47,8 +47,6 @@ struct CrewDetailView: View {
 
 // MARK: - Previews
 
-struct CrewDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        CrewDetailView(data: CrewModel.mock())
-    }
+#Preview {
+    CrewDetailView(data: CrewModel.mock())
 }

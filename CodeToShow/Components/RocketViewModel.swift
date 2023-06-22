@@ -8,18 +8,20 @@
 
 import SwiftUI
 import Combine
+import Observation
 
-class RocketViewModel: ObservableObject {
+@Observable class RocketViewModel {
 
     // MARK: - Published variables
 
-    @Published var data: RocketModel?
+    var data: RocketModel? = nil
 
     // MARK: - Local variables
 
     private var loader: ModelLoader = ModelLoader<RocketModel>(path: .rockets)
+    @ObservationIgnored
     var id: String
-    var observer: AnyCancellable?
+    private var observer: AnyCancellable? = nil
 
     // MARK: - Initializer
 
