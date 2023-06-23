@@ -44,7 +44,7 @@ struct LaunchRowView: View {
                 .font(.title3)
             Text("Flight number \(data.flightNumber)")
             Text("Date \(data.dateUtc.formatted())")
-            Text("Mission \(data.success.handleSuccess())")
+            Text("Mission state \(data.success.handleSuccess())")
         }
     }
 }

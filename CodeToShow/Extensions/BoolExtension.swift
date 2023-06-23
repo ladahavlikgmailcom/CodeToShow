@@ -12,9 +12,9 @@ extension Bool? {
 
     /// Create "success" string from nullable Bool value.
     func handleSuccess() -> String {
-        var successText = "Not known"
+        var successText = "Not known".localized()
         if let success = self {
-            successText = success ? "Success" : "Failure"
+            successText = success ? "Success".localized() : "Failure".localized()
         }
         return successText
     }

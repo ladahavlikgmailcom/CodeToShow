@@ -78,7 +78,7 @@ struct LaunchDetailView: View {
             if let launchDate = data.staticFireDateUtc {
                 LabeledContent("Launch", value: launchDate.formatted())
             }
-            LabeledContent("Mission", value: data.success.handleSuccess())
+            LabeledContent("Mission state", value: data.success.handleSuccess())
             if let details = data.details {
                 Text(details)
             }

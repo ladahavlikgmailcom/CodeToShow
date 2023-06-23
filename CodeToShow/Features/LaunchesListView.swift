@@ -57,7 +57,7 @@ struct LaunchesListView: View {
         Menu {
             Group {
                 ForEach(SortingEnum.allCases, id: \.self) { item in
-                    Button(item.rawValue, action: { vm.sortData(sortingEnum: item) })
+                    Button(item.localized, action: { vm.sortData(sortingEnum: item) })
                 }
             }
         } label: {

@@ -14,18 +14,18 @@ final class BoolExtensionTests: XCTestCase {
     func testWithNull() throws {
         let testBool: Bool? = nil
         let valueString = testBool.handleSuccess()
-        XCTAssertEqual(valueString, "Not known")
+        XCTAssertEqual(valueString, "Not known".localized())
     }
 
     func testWithTrue() throws {
         let testBool: Bool? = true
         let valueString = testBool.handleSuccess()
-        XCTAssertEqual(valueString, "Success")
+        XCTAssertEqual(valueString, "Success".localized())
     }
 
     func testWithFalse() throws {
         let testBool: Bool? = false
         let valueString = testBool.handleSuccess()
-        XCTAssertEqual(valueString, "Failure")
+        XCTAssertEqual(valueString, "Failure".localized())
     }
 }
