@@ -61,6 +61,8 @@
 		07C92A2B2A21058200FE55EC /* FirstStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A2A2A21058200FE55EC /* FirstStage.swift */; };
 		07C92A2D2A2105A900FE55EC /* Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A2C2A2105A900FE55EC /* Mass.swift */; };
 		07C92A312A21060A00FE55EC /* Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A302A21060A00FE55EC /* Height.swift */; };
+		07D2D4782A459C2E00E4BB1F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 07D2D4772A459C2E00E4BB1F /* Localizable.xcstrings */; };
+		07D2D47A2A45A02C00E4BB1F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2D4792A45A02C00E4BB1F /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		07C92A2A2A21058200FE55EC /* FirstStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStage.swift; sourceTree = "<group>"; };
 		07C92A2C2A2105A900FE55EC /* Mass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mass.swift; sourceTree = "<group>"; };
 		07C92A302A21060A00FE55EC /* Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Height.swift; sourceTree = "<group>"; };
+		07D2D4772A459C2E00E4BB1F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		07D2D4792A45A02C00E4BB1F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +278,7 @@
 				07B2A8D02A1CC56100B16A4F /* API */,
 				07B2A8D72A1CCAD100B16A4F /* Extensions */,
 				07B2A8C12A1CC15100B16A4F /* Assets.xcassets */,
+				07D2D4772A459C2E00E4BB1F /* Localizable.xcstrings */,
 				07B2A8C32A1CC15100B16A4F /* Preview Content */,
 			);
 			path = CodeToShow;
@@ -340,6 +345,7 @@
 			children = (
 				07803AF72A1F844700028F45 /* BoolExtension.swift */,
 				07B2A8D82A1CCAF400B16A4F /* JSONDecoderExtension.swift */,
+				07D2D4792A45A02C00E4BB1F /* StringExtension.swift */,
 				078CA2952A2A05FC009DB6AD /* URLExtension.swift */,
 				07B2A8E42A1CDD6900B16A4F /* URLRequestExtension.swift */,
 			);
@@ -478,6 +484,7 @@
 			knownRegions = (
 				en,
 				Base,
+				cs,
 			);
 			mainGroup = 07B2A8B12A1CC15000B16A4F;
 			packageReferences = (
@@ -514,6 +521,7 @@
 			files = (
 				07B2A8C52A1CC15100B16A4F /* Preview Assets.xcassets in Resources */,
 				07B2A8C22A1CC15100B16A4F /* Assets.xcassets in Resources */,
+				07D2D4782A459C2E00E4BB1F /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +596,7 @@
 				07B2A8E92A1CF06300B16A4F /* SortingEnum.swift in Sources */,
 				07B2A8BE2A1CC15000B16A4F /* CodeToShowApp.swift in Sources */,
 				07C92A312A21060A00FE55EC /* Height.swift in Sources */,
+				07D2D47A2A45A02C00E4BB1F /* StringExtension.swift in Sources */,
 				07B2A8EB2A1CF24800B16A4F /* LaunchRowView.swift in Sources */,
 				07B2A8D22A1CC8F100B16A4F /* LaunchesListView.swift in Sources */,
 				07C92A082A20F5A200FE55EC /* StarlinkModel.swift in Sources */,
@@ -643,6 +652,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -663,6 +673,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -684,6 +695,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -705,6 +717,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -860,6 +873,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -896,6 +910,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
