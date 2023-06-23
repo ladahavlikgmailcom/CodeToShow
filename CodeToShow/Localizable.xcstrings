@@ -102,7 +102,7 @@
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Datum"
+            "value" : "Datum %@"
           }
         },
         "en" : {
