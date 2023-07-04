@@ -251,7 +251,13 @@
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Stay mise"
+            "value" : "Stav mise"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mission state"
           }
         }
       }
