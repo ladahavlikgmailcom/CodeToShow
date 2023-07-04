@@ -53,4 +53,5 @@ struct RocketView: View {
 
 #Preview {
     RocketView(data: RocketModel.mock())
+        .padding()
 }
