@@ -49,4 +49,5 @@ struct CrewDetailView: View {
 
 #Preview {
     CrewDetailView(data: CrewModel.mock())
+        .padding()
 }

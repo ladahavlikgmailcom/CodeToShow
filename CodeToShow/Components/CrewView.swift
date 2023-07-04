@@ -40,4 +40,5 @@ struct CrewView: View {
             Crew(crew: "62dd7253202306255024d13f", role: "Mission Specialist 2")
         ])
     }
+    .padding()
 }
