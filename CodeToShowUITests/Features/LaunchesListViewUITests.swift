@@ -21,7 +21,7 @@ final class LaunchesListViewUITests: XCTestCase {
         let missionsNavigationBar = app.navigationBars["Mise"]
         missionsNavigationBar.searchFields["Hledat"].tap()
         missionsNavigationBar.buttons["Zrušit"].tap()
-        missionsNavigationBar.buttons["Seřadit"].tap()
+        missionsNavigationBar.images["Seřadit"].tap()
     }
 
     func testLaunchesListViewSearchCrew5() throws {
