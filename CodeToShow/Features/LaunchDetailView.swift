@@ -12,7 +12,11 @@ struct LaunchDetailView: View {
 
     // MARK: - State variables
 
+#if os(visionOS)
+    private let isLandscape: Bool = false
+#else
     @State private var isLandscape = UIDevice.current.orientation.isLandscape
+#endif
 
     // MARK: - Local variables
 
@@ -43,9 +47,11 @@ struct LaunchDetailView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+#if !os(visionOS)
         .onRotate { isLandscape in
             self.isLandscape = isLandscape
         }
+#endif
     }
 
     // MARK: Body particles
