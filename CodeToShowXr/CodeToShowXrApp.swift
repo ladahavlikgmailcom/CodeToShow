@@ -13,7 +13,7 @@ struct CodeToShowXrApp: App {
     var body: some Scene {
         WindowGroup {
             LaunchesListView()
-                .frame(maxWidth: 550)
+                .frame(maxWidth: 650)
         }
     }
 }

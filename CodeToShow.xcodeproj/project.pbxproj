@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0759B42E2ADD4CBA00F85613 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 0759B42D2ADD4CBA00F85613 /* RealityKitContent */; };
 		0759B4302ADD4CBA00F85613 /* CodeToShowXrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0759B42F2ADD4CBA00F85613 /* CodeToShowXrApp.swift */; };
-		0759B4322ADD4CBA00F85613 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0759B4312ADD4CBA00F85613 /* ContentView.swift */; };
-		0759B4342ADD4CBB00F85613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0759B4332ADD4CBB00F85613 /* Assets.xcassets */; };
 		0759B4372ADD4CBB00F85613 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0759B4362ADD4CBB00F85613 /* Preview Assets.xcassets */; };
 		0759B43C2ADD4F2C00F85613 /* LaunchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8D12A1CC8F100B16A4F /* LaunchesListView.swift */; };
 		0759B43D2ADD4F3100F85613 /* LaunchesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8D32A1CC9AC00B16A4F /* LaunchesListViewModel.swift */; };
@@ -55,6 +52,7 @@
 		0759B4642ADD50F400F85613 /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8D82A1CCAF400B16A4F /* JSONDecoderExtension.swift */; };
 		0759B4652ADD50F400F85613 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8E42A1CDD6900B16A4F /* URLRequestExtension.swift */; };
 		0759B4662ADD510500F85613 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 07D2D4772A459C2E00E4BB1F /* Localizable.xcstrings */; };
+		0759B4692ADD5A1100F85613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0759B4682ADD5A1100F85613 /* Assets.xcassets */; };
 		07803AE12A1F5BE100028F45 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AE02A1F5BE100028F45 /* ErrorView.swift */; };
 		07803AE32A1F66A200028F45 /* LaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AE22A1F66A200028F45 /* LaunchDetailView.swift */; };
 		07803AE82A1F680900028F45 /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AE72A1F680900028F45 /* DeviceRotationViewModifier.swift */; };
@@ -132,12 +130,10 @@
 
 /* Begin PBXFileReference section */
 		0759B4292ADD4CBA00F85613 /* CodeToShowXr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeToShowXr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0759B42C2ADD4CBA00F85613 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		0759B42F2ADD4CBA00F85613 /* CodeToShowXrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeToShowXrApp.swift; sourceTree = "<group>"; };
-		0759B4312ADD4CBA00F85613 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0759B4332ADD4CBB00F85613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0759B4362ADD4CBB00F85613 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0759B4382ADD4CBB00F85613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0759B4682ADD5A1100F85613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07803AE02A1F5BE100028F45 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		07803AE22A1F66A200028F45 /* LaunchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailView.swift; sourceTree = "<group>"; };
 		07803AE72A1F680900028F45 /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
@@ -204,7 +200,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0759B42E2ADD4CBA00F85613 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,20 +231,11 @@
 			isa = PBXGroup;
 			children = (
 				0759B42F2ADD4CBA00F85613 /* CodeToShowXrApp.swift */,
-				0759B4312ADD4CBA00F85613 /* ContentView.swift */,
-				0759B4332ADD4CBB00F85613 /* Assets.xcassets */,
 				0759B4382ADD4CBB00F85613 /* Info.plist */,
 				0759B4352ADD4CBB00F85613 /* Preview Content */,
+				0759B4682ADD5A1100F85613 /* Assets.xcassets */,
 			);
 			path = CodeToShowXr;
-			sourceTree = "<group>";
-		};
-		0759B42B2ADD4CBA00F85613 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				0759B42C2ADD4CBA00F85613 /* RealityKitContent */,
-			);
-			path = Packages;
 			sourceTree = "<group>";
 		};
 		0759B4352ADD4CBB00F85613 /* Preview Content */ = {
@@ -346,7 +332,6 @@
 				07AF729F2A1F9DE50061A976 /* CodeToShowTests */,
 				0783F5B42A20B04D001634C7 /* CodeToShowUITests */,
 				0759B42A2ADD4CBA00F85613 /* CodeToShowXr */,
-				0759B42B2ADD4CBA00F85613 /* Packages */,
 				07B2A8BB2A1CC15000B16A4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -505,7 +490,6 @@
 			);
 			name = CodeToShowXr;
 			packageProductDependencies = (
-				0759B42D2ADD4CBA00F85613 /* RealityKitContent */,
 			);
 			productName = CodeToShowXr;
 			productReference = 0759B4292ADD4CBA00F85613 /* CodeToShowXr.app */;
@@ -624,7 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0759B4372ADD4CBB00F85613 /* Preview Assets.xcassets in Resources */,
-				0759B4342ADD4CBB00F85613 /* Assets.xcassets in Resources */,
+				0759B4692ADD5A1100F85613 /* Assets.xcassets in Resources */,
 				0759B4662ADD510500F85613 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -700,7 +684,6 @@
 				0759B4612ADD50F400F85613 /* StringExtension.swift in Sources */,
 				0759B45B2ADD508600F85613 /* LaunchRowView.swift in Sources */,
 				0759B43D2ADD4F3100F85613 /* LaunchesListViewModel.swift in Sources */,
-				0759B4322ADD4CBA00F85613 /* ContentView.swift in Sources */,
 				0759B4582ADD508600F85613 /* RocketViewModel.swift in Sources */,
 				0759B4412ADD500D00F85613 /* Engine.swift in Sources */,
 				0759B4472ADD500D00F85613 /* Fairing.swift in Sources */,
@@ -1212,13 +1195,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		0759B42D2ADD4CBA00F85613 /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 07B2A8B22A1CC15000B16A4F /* Project object */;
 }

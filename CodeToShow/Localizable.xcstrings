@@ -230,9 +230,6 @@
         }
       }
     },
-    "Hello, world!" : {
-
-    },
     "Launch" : {
       "localizations" : {
         "cs" : {
