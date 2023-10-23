@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "lh400x240Back.png",
+      "idiom" : "tv",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "lh400x240Back@2x.png",
+      "idiom" : "tv",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "lh1280x768Front.png",
+      "idiom" : "tv"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

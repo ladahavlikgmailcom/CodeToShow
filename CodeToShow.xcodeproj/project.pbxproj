@@ -154,6 +154,52 @@
 		07CACA7E2AE67DC7002B7887 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078CA2952A2A05FC009DB6AD /* URLExtension.swift */; };
 		07CACA7F2AE67DC7002B7887 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2D4792A45A02C00E4BB1F /* StringExtension.swift */; };
 		07CACA802AE67DCF002B7887 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 07D2D4772A459C2E00E4BB1F /* Localizable.xcstrings */; };
+		07CACA882AE68036002B7887 /* CodeToShowTvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CACA872AE68036002B7887 /* CodeToShowTvApp.swift */; };
+		07CACA8C2AE68037002B7887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CACA8B2AE68037002B7887 /* Assets.xcassets */; };
+		07CACA8F2AE68037002B7887 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CACA8E2AE68037002B7887 /* Preview Assets.xcassets */; };
+		07CACA932AE681C1002B7887 /* LaunchesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8D32A1CC9AC00B16A4F /* LaunchesListViewModel.swift */; };
+		07CACA942AE681C1002B7887 /* LaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AE22A1F66A200028F45 /* LaunchDetailView.swift */; };
+		07CACA952AE681C1002B7887 /* LaunchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8D12A1CC8F100B16A4F /* LaunchesListView.swift */; };
+		07CACA962AE681C8002B7887 /* CrewDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AEA2A1F6E6200028F45 /* CrewDetailViewModel.swift */; };
+		07CACA972AE681C8002B7887 /* CrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AEB2A1F6E6200028F45 /* CrewView.swift */; };
+		07CACA982AE681C8002B7887 /* LaunchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8EA2A1CF24800B16A4F /* LaunchRowView.swift */; };
+		07CACA992AE681C8002B7887 /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AEC2A1F6E6200028F45 /* RocketView.swift */; };
+		07CACA9A2AE681C8002B7887 /* RocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AED2A1F6E6200028F45 /* RocketViewModel.swift */; };
+		07CACA9B2AE681C8002B7887 /* CrewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AE92A1F6E6200028F45 /* CrewDetailView.swift */; };
+		07CACA9C2AE681C8002B7887 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AE02A1F5BE100028F45 /* ErrorView.swift */; };
+		07CACA9D2AE681CC002B7887 /* SortingEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8E82A1CF06300B16A4F /* SortingEnum.swift */; };
+		07CACA9F2AE681DD002B7887 /* CompositeFairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A222A2104C500FE55EC /* CompositeFairing.swift */; };
+		07CACAA02AE681DD002B7887 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A102A21026100FE55EC /* Flickr.swift */; };
+		07CACAA12AE681DD002B7887 /* Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A2C2A2105A900FE55EC /* Mass.swift */; };
+		07CACAA22AE681DD002B7887 /* Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A302A21060A00FE55EC /* Height.swift */; };
+		07CACAA32AE681DD002B7887 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8E22A1CD6A000B16A4F /* ErrorModel.swift */; };
+		07CACAA42AE681DD002B7887 /* StarlinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A072A20F5A200FE55EC /* StarlinkModel.swift */; };
+		07CACAA52AE681DD002B7887 /* SecondStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A282A21054E00FE55EC /* SecondStage.swift */; };
+		07CACAA62AE681DD002B7887 /* Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A122A2102A200FE55EC /* Reddit.swift */; };
+		07CACAA72AE681DD002B7887 /* Thrust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A262A21051700FE55EC /* Thrust.swift */; };
+		07CACAA82AE681DD002B7887 /* CrewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AF42A1F70C600028F45 /* CrewModel.swift */; };
+		07CACAA92AE681DD002B7887 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A0A2A2101C100FE55EC /* Core.swift */; };
+		07CACAAA2AE681DD002B7887 /* LandingLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A1C2A21041F00FE55EC /* LandingLeg.swift */; };
+		07CACAAB2AE681DD002B7887 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A142A2102DC00FE55EC /* Patch.swift */; };
+		07CACAAC2AE681DD002B7887 /* RocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AF32A1F70C600028F45 /* RocketModel.swift */; };
+		07CACAAD2AE681DD002B7887 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A0E2A21023B00FE55EC /* Failure.swift */; };
+		07CACAAE2AE681DD002B7887 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A242A2104ED00FE55EC /* Payload.swift */; };
+		07CACAAF2AE681DD002B7887 /* Fairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A182A21034900FE55EC /* Fairing.swift */; };
+		07CACAB02AE681DD002B7887 /* FirstStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A2A2A21058200FE55EC /* FirstStage.swift */; };
+		07CACAB12AE681DD002B7887 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A202A21047D00FE55EC /* Engine.swift */; };
+		07CACAB22AE681DD002B7887 /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A0C2A21020600FE55EC /* Crew.swift */; };
+		07CACAB32AE681DD002B7887 /* PayloadWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A1A2A2103F700FE55EC /* PayloadWeight.swift */; };
+		07CACAB42AE681DD002B7887 /* Isp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A1E2A21044800FE55EC /* Isp.swift */; };
+		07CACAB52AE681DD002B7887 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A162A21031200FE55EC /* Link.swift */; };
+		07CACAB62AE681E5002B7887 /* ModelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8DC2A1CD1D200B16A4F /* ModelLoader.swift */; };
+		07CACAB72AE681E5002B7887 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8E02A1CD5FD00B16A4F /* Networking.swift */; };
+		07CACAB82AE681E5002B7887 /* ComponentPathsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8DE2A1CD47400B16A4F /* ComponentPathsEnum.swift */; };
+		07CACAB92AE681ED002B7887 /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8D82A1CCAF400B16A4F /* JSONDecoderExtension.swift */; };
+		07CACABA2AE681ED002B7887 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078CA2952A2A05FC009DB6AD /* URLExtension.swift */; };
+		07CACABB2AE681ED002B7887 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AF72A1F844700028F45 /* BoolExtension.swift */; };
+		07CACABC2AE681ED002B7887 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2D4792A45A02C00E4BB1F /* StringExtension.swift */; };
+		07CACABD2AE681ED002B7887 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8E42A1CDD6900B16A4F /* URLRequestExtension.swift */; };
+		07CACABE2AE681F4002B7887 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 07D2D4772A459C2E00E4BB1F /* Localizable.xcstrings */; };
 		07D2D4782A459C2E00E4BB1F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 07D2D4772A459C2E00E4BB1F /* Localizable.xcstrings */; };
 		07D2D47A2A45A02C00E4BB1F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2D4792A45A02C00E4BB1F /* StringExtension.swift */; };
 /* End PBXBuildFile section */
@@ -242,6 +288,10 @@
 		07CACA492AE67C9D002B7887 /* CodeToShowPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeToShowPadApp.swift; sourceTree = "<group>"; };
 		07CACA4D2AE67C9E002B7887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07CACA502AE67C9E002B7887 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07CACA852AE68036002B7887 /* CodeToShowTv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeToShowTv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07CACA872AE68036002B7887 /* CodeToShowTvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeToShowTvApp.swift; sourceTree = "<group>"; };
+		07CACA8B2AE68037002B7887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07CACA8E2AE68037002B7887 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		07D2D4772A459C2E00E4BB1F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		07D2D4792A45A02C00E4BB1F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -276,6 +326,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07CACA442AE67C9D002B7887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07CACA822AE68036002B7887 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -391,6 +448,7 @@
 				0783F5B42A20B04D001634C7 /* CodeToShowUITests */,
 				0759B42A2ADD4CBA00F85613 /* CodeToShowXr */,
 				07CACA482AE67C9D002B7887 /* CodeToShowPad */,
+				07CACA862AE68036002B7887 /* CodeToShowTv */,
 				07B2A8BB2A1CC15000B16A4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -403,6 +461,7 @@
 				0783F5B32A20B04D001634C7 /* CodeToShowUITests.xctest */,
 				0759B4292ADD4CBA00F85613 /* CodeToShowXr.app */,
 				07CACA472AE67C9D002B7887 /* CodeToShowPad.app */,
+				07CACA852AE68036002B7887 /* CodeToShowTv.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -551,6 +610,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		07CACA862AE68036002B7887 /* CodeToShowTv */ = {
+			isa = PBXGroup;
+			children = (
+				07CACA872AE68036002B7887 /* CodeToShowTvApp.swift */,
+				07CACA8B2AE68037002B7887 /* Assets.xcassets */,
+				07CACA8D2AE68037002B7887 /* Preview Content */,
+			);
+			path = CodeToShowTv;
+			sourceTree = "<group>";
+		};
+		07CACA8D2AE68037002B7887 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				07CACA8E2AE68037002B7887 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -646,6 +723,23 @@
 			productReference = 07CACA472AE67C9D002B7887 /* CodeToShowPad.app */;
 			productType = "com.apple.product-type.application";
 		};
+		07CACA842AE68036002B7887 /* CodeToShowTv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07CACA902AE68037002B7887 /* Build configuration list for PBXNativeTarget "CodeToShowTv" */;
+			buildPhases = (
+				07CACA812AE68036002B7887 /* Sources */,
+				07CACA822AE68036002B7887 /* Frameworks */,
+				07CACA832AE68036002B7887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeToShowTv;
+			productName = CodeToShowTv;
+			productReference = 07CACA852AE68036002B7887 /* CodeToShowTv.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -674,6 +768,9 @@
 					07CACA462AE67C9D002B7887 = {
 						CreatedOnToolsVersion = 15.1;
 					};
+					07CACA842AE68036002B7887 = {
+						CreatedOnToolsVersion = 15.1;
+					};
 				};
 			};
 			buildConfigurationList = 07B2A8B52A1CC15000B16A4F /* Build configuration list for PBXProject "CodeToShow" */;
@@ -693,10 +790,11 @@
 			projectRoot = "";
 			targets = (
 				07B2A8B92A1CC15000B16A4F /* CodeToShow */,
-				07AF729D2A1F9DE50061A976 /* CodeToShowTests */,
-				0783F5B22A20B04D001634C7 /* CodeToShowUITests */,
 				0759B4282ADD4CBA00F85613 /* CodeToShowXr */,
 				07CACA462AE67C9D002B7887 /* CodeToShowPad */,
+				07CACA842AE68036002B7887 /* CodeToShowTv */,
+				07AF729D2A1F9DE50061A976 /* CodeToShowTests */,
+				0783F5B22A20B04D001634C7 /* CodeToShowUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -743,6 +841,16 @@
 				07CACA512AE67C9E002B7887 /* Preview Assets.xcassets in Resources */,
 				07CACA4E2AE67C9E002B7887 /* Assets.xcassets in Resources */,
 				07CACA802AE67DCF002B7887 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07CACA832AE68036002B7887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07CACA8F2AE68037002B7887 /* Preview Assets.xcassets in Resources */,
+				07CACA8C2AE68037002B7887 /* Assets.xcassets in Resources */,
+				07CACABE2AE681F4002B7887 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,6 +1050,56 @@
 				07CACA762AE67DA9002B7887 /* CrewModel.swift in Sources */,
 				07CACA7C2AE67DC7002B7887 /* URLRequestExtension.swift in Sources */,
 				07CACA5E2AE67D78002B7887 /* ErrorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07CACA812AE68036002B7887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07CACAA42AE681DD002B7887 /* StarlinkModel.swift in Sources */,
+				07CACA9F2AE681DD002B7887 /* CompositeFairing.swift in Sources */,
+				07CACA942AE681C1002B7887 /* LaunchDetailView.swift in Sources */,
+				07CACAA82AE681DD002B7887 /* CrewModel.swift in Sources */,
+				07CACA972AE681C8002B7887 /* CrewView.swift in Sources */,
+				07CACA882AE68036002B7887 /* CodeToShowTvApp.swift in Sources */,
+				07CACAA92AE681DD002B7887 /* Core.swift in Sources */,
+				07CACA962AE681C8002B7887 /* CrewDetailViewModel.swift in Sources */,
+				07CACABD2AE681ED002B7887 /* URLRequestExtension.swift in Sources */,
+				07CACABB2AE681ED002B7887 /* BoolExtension.swift in Sources */,
+				07CACAAC2AE681DD002B7887 /* RocketModel.swift in Sources */,
+				07CACAB92AE681ED002B7887 /* JSONDecoderExtension.swift in Sources */,
+				07CACABC2AE681ED002B7887 /* StringExtension.swift in Sources */,
+				07CACABA2AE681ED002B7887 /* URLExtension.swift in Sources */,
+				07CACAA32AE681DD002B7887 /* ErrorModel.swift in Sources */,
+				07CACA9B2AE681C8002B7887 /* CrewDetailView.swift in Sources */,
+				07CACAA02AE681DD002B7887 /* Flickr.swift in Sources */,
+				07CACAA62AE681DD002B7887 /* Reddit.swift in Sources */,
+				07CACAB22AE681DD002B7887 /* Crew.swift in Sources */,
+				07CACAB52AE681DD002B7887 /* Link.swift in Sources */,
+				07CACA9A2AE681C8002B7887 /* RocketViewModel.swift in Sources */,
+				07CACAA12AE681DD002B7887 /* Mass.swift in Sources */,
+				07CACAB42AE681DD002B7887 /* Isp.swift in Sources */,
+				07CACAB72AE681E5002B7887 /* Networking.swift in Sources */,
+				07CACAAD2AE681DD002B7887 /* Failure.swift in Sources */,
+				07CACAA52AE681DD002B7887 /* SecondStage.swift in Sources */,
+				07CACA932AE681C1002B7887 /* LaunchesListViewModel.swift in Sources */,
+				07CACAAA2AE681DD002B7887 /* LandingLeg.swift in Sources */,
+				07CACAAF2AE681DD002B7887 /* Fairing.swift in Sources */,
+				07CACAB82AE681E5002B7887 /* ComponentPathsEnum.swift in Sources */,
+				07CACAB32AE681DD002B7887 /* PayloadWeight.swift in Sources */,
+				07CACAB02AE681DD002B7887 /* FirstStage.swift in Sources */,
+				07CACAAE2AE681DD002B7887 /* Payload.swift in Sources */,
+				07CACAA72AE681DD002B7887 /* Thrust.swift in Sources */,
+				07CACA9D2AE681CC002B7887 /* SortingEnum.swift in Sources */,
+				07CACA982AE681C8002B7887 /* LaunchRowView.swift in Sources */,
+				07CACA992AE681C8002B7887 /* RocketView.swift in Sources */,
+				07CACA952AE681C1002B7887 /* LaunchesListView.swift in Sources */,
+				07CACAA22AE681DD002B7887 /* Height.swift in Sources */,
+				07CACAB62AE681E5002B7887 /* ModelLoader.swift in Sources */,
+				07CACAB12AE681DD002B7887 /* Engine.swift in Sources */,
+				07CACAAB2AE681DD002B7887 /* Patch.swift in Sources */,
+				07CACA9C2AE681C8002B7887 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1377,6 +1535,67 @@
 			};
 			name = Release;
 		};
+		07CACA912AE68037002B7887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowTv/Preview Content\"";
+				DEVELOPMENT_TEAM = 44G4QSF9PU;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.ladahavlik.CodeToShowTv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		07CACA922AE68037002B7887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowTv/Preview Content\"";
+				DEVELOPMENT_TEAM = 44G4QSF9PU;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.ladahavlik.CodeToShowTv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1430,6 +1649,15 @@
 			buildConfigurations = (
 				07CACA532AE67C9E002B7887 /* Debug */,
 				07CACA542AE67C9E002B7887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07CACA902AE68037002B7887 /* Build configuration list for PBXNativeTarget "CodeToShowTv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07CACA912AE68037002B7887 /* Debug */,
+				07CACA922AE68037002B7887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
