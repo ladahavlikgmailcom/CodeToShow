@@ -12,7 +12,8 @@ import SwiftUI
 struct CodeToShowPadApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchesListView()
+                .frame(maxWidth: 650)
         }
     }
 }
