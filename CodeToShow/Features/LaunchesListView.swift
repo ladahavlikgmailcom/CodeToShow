@@ -28,7 +28,7 @@ struct LaunchesListView: View {
                 }
             }
             .navigationTitle("Missions")
-#if !os(watchOS)
+#if !os(watchOS) && !os(macOS)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     toolbarItemContent
