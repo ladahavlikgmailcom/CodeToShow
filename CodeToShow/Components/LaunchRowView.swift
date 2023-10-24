@@ -17,13 +17,20 @@ struct LaunchRowView: View {
     // MARK: - Body part
 
     var body: some View {
+#if os(watchOS)
+        VStack {
+            smallPatch
+                .frame(maxWidth: 40, maxHeight: 40)
+            textInfo
+        }
+#else
         HStack {
             smallPatch
                 .frame(maxWidth: 100, maxHeight: 100)
-
             textInfo
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
+#endif
     }
 
     // MARK: - Body particles
