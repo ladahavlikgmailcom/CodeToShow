@@ -7,6 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0748D5F42AE7C27E00D81461 /* CodeToShowWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0748D5F32AE7C27E00D81461 /* CodeToShowWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0748D5F92AE7C27E00D81461 /* CodeToShowWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748D5F82AE7C27E00D81461 /* CodeToShowWatchApp.swift */; };
+		0748D5FD2AE7C27F00D81461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0748D5FC2AE7C27F00D81461 /* Assets.xcassets */; };
+		0748D6002AE7C27F00D81461 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0748D5FF2AE7C27F00D81461 /* Preview Assets.xcassets */; };
+		0748D6082AE7C43200D81461 /* LaunchesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8D32A1CC9AC00B16A4F /* LaunchesListViewModel.swift */; };
+		0748D6092AE7C43200D81461 /* LaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AE22A1F66A200028F45 /* LaunchDetailView.swift */; };
+		0748D60A2AE7C43200D81461 /* LaunchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8D12A1CC8F100B16A4F /* LaunchesListView.swift */; };
+		0748D60B2AE7C44100D81461 /* CrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AEB2A1F6E6200028F45 /* CrewView.swift */; };
+		0748D60C2AE7C44100D81461 /* LaunchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8EA2A1CF24800B16A4F /* LaunchRowView.swift */; };
+		0748D60D2AE7C44100D81461 /* CrewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AE92A1F6E6200028F45 /* CrewDetailView.swift */; };
+		0748D60E2AE7C44100D81461 /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AEC2A1F6E6200028F45 /* RocketView.swift */; };
+		0748D60F2AE7C44100D81461 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AE02A1F5BE100028F45 /* ErrorView.swift */; };
+		0748D6102AE7C44100D81461 /* RocketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AED2A1F6E6200028F45 /* RocketViewModel.swift */; };
+		0748D6112AE7C44100D81461 /* CrewDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AEA2A1F6E6200028F45 /* CrewDetailViewModel.swift */; };
+		0748D6122AE7C44800D81461 /* SortingEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8E82A1CF06300B16A4F /* SortingEnum.swift */; };
+		0748D6132AE7C45C00D81461 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A202A21047D00FE55EC /* Engine.swift */; };
+		0748D6142AE7C45C00D81461 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A162A21031200FE55EC /* Link.swift */; };
+		0748D6152AE7C45C00D81461 /* Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A302A21060A00FE55EC /* Height.swift */; };
+		0748D6162AE7C45C00D81461 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A0A2A2101C100FE55EC /* Core.swift */; };
+		0748D6172AE7C45C00D81461 /* Thrust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A262A21051700FE55EC /* Thrust.swift */; };
+		0748D6182AE7C45C00D81461 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A0E2A21023B00FE55EC /* Failure.swift */; };
+		0748D6192AE7C45C00D81461 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A142A2102DC00FE55EC /* Patch.swift */; };
+		0748D61A2AE7C45C00D81461 /* Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A2C2A2105A900FE55EC /* Mass.swift */; };
+		0748D61B2AE7C45C00D81461 /* FirstStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A2A2A21058200FE55EC /* FirstStage.swift */; };
+		0748D61C2AE7C45C00D81461 /* Fairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A182A21034900FE55EC /* Fairing.swift */; };
+		0748D61D2AE7C45C00D81461 /* Isp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A1E2A21044800FE55EC /* Isp.swift */; };
+		0748D61E2AE7C45C00D81461 /* Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A122A2102A200FE55EC /* Reddit.swift */; };
+		0748D61F2AE7C45C00D81461 /* CompositeFairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A222A2104C500FE55EC /* CompositeFairing.swift */; };
+		0748D6202AE7C45C00D81461 /* SecondStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A282A21054E00FE55EC /* SecondStage.swift */; };
+		0748D6212AE7C45C00D81461 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A102A21026100FE55EC /* Flickr.swift */; };
+		0748D6222AE7C45C00D81461 /* StarlinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A072A20F5A200FE55EC /* StarlinkModel.swift */; };
+		0748D6232AE7C45C00D81461 /* PayloadWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A1A2A2103F700FE55EC /* PayloadWeight.swift */; };
+		0748D6242AE7C45C00D81461 /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A0C2A21020600FE55EC /* Crew.swift */; };
+		0748D6252AE7C45C00D81461 /* LandingLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A1C2A21041F00FE55EC /* LandingLeg.swift */; };
+		0748D6262AE7C45C00D81461 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C92A242A2104ED00FE55EC /* Payload.swift */; };
+		0748D6272AE7C45C00D81461 /* CrewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AF42A1F70C600028F45 /* CrewModel.swift */; };
+		0748D6282AE7C45C00D81461 /* RocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AF32A1F70C600028F45 /* RocketModel.swift */; };
+		0748D6292AE7C45C00D81461 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8E22A1CD6A000B16A4F /* ErrorModel.swift */; };
+		0748D62A2AE7C46800D81461 /* ModelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8DC2A1CD1D200B16A4F /* ModelLoader.swift */; };
+		0748D62B2AE7C46800D81461 /* ComponentPathsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8DE2A1CD47400B16A4F /* ComponentPathsEnum.swift */; };
+		0748D62C2AE7C46800D81461 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8E02A1CD5FD00B16A4F /* Networking.swift */; };
+		0748D62D2AE7C47300D81461 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078CA2952A2A05FC009DB6AD /* URLExtension.swift */; };
+		0748D62E2AE7C47300D81461 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8E42A1CDD6900B16A4F /* URLRequestExtension.swift */; };
+		0748D62F2AE7C47300D81461 /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8D82A1CCAF400B16A4F /* JSONDecoderExtension.swift */; };
+		0748D6302AE7C47300D81461 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07803AF72A1F844700028F45 /* BoolExtension.swift */; };
+		0748D6312AE7C47300D81461 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2D4792A45A02C00E4BB1F /* StringExtension.swift */; };
+		0748D6322AE7C47D00D81461 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 07D2D4772A459C2E00E4BB1F /* Localizable.xcstrings */; };
 		0759B4302ADD4CBA00F85613 /* CodeToShowXrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0759B42F2ADD4CBA00F85613 /* CodeToShowXrApp.swift */; };
 		0759B4372ADD4CBB00F85613 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0759B4362ADD4CBB00F85613 /* Preview Assets.xcassets */; };
 		0759B43C2ADD4F2C00F85613 /* LaunchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2A8D12A1CC8F100B16A4F /* LaunchesListView.swift */; };
@@ -205,6 +252,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0748D5F52AE7C27E00D81461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B2A8B22A1CC15000B16A4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0748D5F22AE7C27E00D81461;
+			remoteInfo = "CodeToShowWatch Watch App";
+		};
 		0783F5B92A20B04D001634C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 07B2A8B22A1CC15000B16A4F /* Project object */;
@@ -221,7 +275,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0748D6032AE7C27F00D81461 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0748D5F42AE7C27E00D81461 /* CodeToShowWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0748D5EE2AE7C27E00D81461 /* CodeToShowWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeToShowWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0748D5F32AE7C27E00D81461 /* CodeToShowWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodeToShowWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0748D5F82AE7C27E00D81461 /* CodeToShowWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeToShowWatchApp.swift; sourceTree = "<group>"; };
+		0748D5FC2AE7C27F00D81461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0748D5FF2AE7C27F00D81461 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0759B4292ADD4CBA00F85613 /* CodeToShowXr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeToShowXr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0759B42F2ADD4CBA00F85613 /* CodeToShowXrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeToShowXrApp.swift; sourceTree = "<group>"; };
 		0759B4362ADD4CBB00F85613 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -297,6 +370,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0748D5F02AE7C27E00D81461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0759B4262ADD4CBA00F85613 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +422,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0748D5F72AE7C27E00D81461 /* CodeToShowWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				0748D5F82AE7C27E00D81461 /* CodeToShowWatchApp.swift */,
+				0748D5FC2AE7C27F00D81461 /* Assets.xcassets */,
+				0748D5FE2AE7C27F00D81461 /* Preview Content */,
+			);
+			path = "CodeToShowWatch Watch App";
+			sourceTree = "<group>";
+		};
+		0748D5FE2AE7C27F00D81461 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0748D5FF2AE7C27F00D81461 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		0759B42A2ADD4CBA00F85613 /* CodeToShowXr */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +547,7 @@
 				0759B42A2ADD4CBA00F85613 /* CodeToShowXr */,
 				07CACA482AE67C9D002B7887 /* CodeToShowPad */,
 				07CACA862AE68036002B7887 /* CodeToShowTv */,
+				0748D5F72AE7C27E00D81461 /* CodeToShowWatch Watch App */,
 				07B2A8BB2A1CC15000B16A4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -462,6 +561,8 @@
 				0759B4292ADD4CBA00F85613 /* CodeToShowXr.app */,
 				07CACA472AE67C9D002B7887 /* CodeToShowPad.app */,
 				07CACA852AE68036002B7887 /* CodeToShowTv.app */,
+				0748D5EE2AE7C27E00D81461 /* CodeToShowWatch.app */,
+				0748D5F32AE7C27E00D81461 /* CodeToShowWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -631,6 +732,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0748D5ED2AE7C27E00D81461 /* CodeToShowWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0748D6072AE7C27F00D81461 /* Build configuration list for PBXNativeTarget "CodeToShowWatch" */;
+			buildPhases = (
+				0748D5EC2AE7C27E00D81461 /* Resources */,
+				0748D6032AE7C27F00D81461 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0748D5F62AE7C27E00D81461 /* PBXTargetDependency */,
+			);
+			name = CodeToShowWatch;
+			productName = CodeToShowWatch;
+			productReference = 0748D5EE2AE7C27E00D81461 /* CodeToShowWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		0748D5F22AE7C27E00D81461 /* CodeToShowWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0748D6062AE7C27F00D81461 /* Build configuration list for PBXNativeTarget "CodeToShowWatch Watch App" */;
+			buildPhases = (
+				0748D5EF2AE7C27E00D81461 /* Sources */,
+				0748D5F02AE7C27E00D81461 /* Frameworks */,
+				0748D5F12AE7C27E00D81461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodeToShowWatch Watch App";
+			productName = "CodeToShowWatch Watch App";
+			productReference = 0748D5F32AE7C27E00D81461 /* CodeToShowWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		0759B4282ADD4CBA00F85613 /* CodeToShowXr */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0759B43B2ADD4CBB00F85613 /* Build configuration list for PBXNativeTarget "CodeToShowXr" */;
@@ -751,6 +886,12 @@
 				LastUpgradeCheck = 1510;
 				ORGANIZATIONNAME = LHBnO;
 				TargetAttributes = {
+					0748D5ED2AE7C27E00D81461 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					0748D5F22AE7C27E00D81461 = {
+						CreatedOnToolsVersion = 15.1;
+					};
 					0759B4282ADD4CBA00F85613 = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -793,13 +934,32 @@
 				0759B4282ADD4CBA00F85613 /* CodeToShowXr */,
 				07CACA462AE67C9D002B7887 /* CodeToShowPad */,
 				07CACA842AE68036002B7887 /* CodeToShowTv */,
+				0748D5F22AE7C27E00D81461 /* CodeToShowWatch Watch App */,
 				07AF729D2A1F9DE50061A976 /* CodeToShowTests */,
 				0783F5B22A20B04D001634C7 /* CodeToShowUITests */,
+				0748D5ED2AE7C27E00D81461 /* CodeToShowWatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0748D5EC2AE7C27E00D81461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0748D5F12AE7C27E00D81461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0748D6002AE7C27F00D81461 /* Preview Assets.xcassets in Resources */,
+				0748D5FD2AE7C27F00D81461 /* Assets.xcassets in Resources */,
+				0748D6322AE7C47D00D81461 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0759B4272ADD4CBA00F85613 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -878,6 +1038,56 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0748D5EF2AE7C27E00D81461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0748D62A2AE7C46800D81461 /* ModelLoader.swift in Sources */,
+				0748D6292AE7C45C00D81461 /* ErrorModel.swift in Sources */,
+				0748D6252AE7C45C00D81461 /* LandingLeg.swift in Sources */,
+				0748D6102AE7C44100D81461 /* RocketViewModel.swift in Sources */,
+				0748D6212AE7C45C00D81461 /* Flickr.swift in Sources */,
+				0748D6142AE7C45C00D81461 /* Link.swift in Sources */,
+				0748D6222AE7C45C00D81461 /* StarlinkModel.swift in Sources */,
+				0748D61C2AE7C45C00D81461 /* Fairing.swift in Sources */,
+				0748D6132AE7C45C00D81461 /* Engine.swift in Sources */,
+				0748D6302AE7C47300D81461 /* BoolExtension.swift in Sources */,
+				0748D62B2AE7C46800D81461 /* ComponentPathsEnum.swift in Sources */,
+				0748D60B2AE7C44100D81461 /* CrewView.swift in Sources */,
+				0748D6312AE7C47300D81461 /* StringExtension.swift in Sources */,
+				0748D61F2AE7C45C00D81461 /* CompositeFairing.swift in Sources */,
+				0748D6282AE7C45C00D81461 /* RocketModel.swift in Sources */,
+				0748D61B2AE7C45C00D81461 /* FirstStage.swift in Sources */,
+				0748D62F2AE7C47300D81461 /* JSONDecoderExtension.swift in Sources */,
+				0748D62D2AE7C47300D81461 /* URLExtension.swift in Sources */,
+				0748D6092AE7C43200D81461 /* LaunchDetailView.swift in Sources */,
+				0748D5F92AE7C27E00D81461 /* CodeToShowWatchApp.swift in Sources */,
+				0748D6082AE7C43200D81461 /* LaunchesListViewModel.swift in Sources */,
+				0748D60C2AE7C44100D81461 /* LaunchRowView.swift in Sources */,
+				0748D6172AE7C45C00D81461 /* Thrust.swift in Sources */,
+				0748D62C2AE7C46800D81461 /* Networking.swift in Sources */,
+				0748D62E2AE7C47300D81461 /* URLRequestExtension.swift in Sources */,
+				0748D6242AE7C45C00D81461 /* Crew.swift in Sources */,
+				0748D6202AE7C45C00D81461 /* SecondStage.swift in Sources */,
+				0748D61A2AE7C45C00D81461 /* Mass.swift in Sources */,
+				0748D6262AE7C45C00D81461 /* Payload.swift in Sources */,
+				0748D60D2AE7C44100D81461 /* CrewDetailView.swift in Sources */,
+				0748D6232AE7C45C00D81461 /* PayloadWeight.swift in Sources */,
+				0748D61D2AE7C45C00D81461 /* Isp.swift in Sources */,
+				0748D6192AE7C45C00D81461 /* Patch.swift in Sources */,
+				0748D6182AE7C45C00D81461 /* Failure.swift in Sources */,
+				0748D6122AE7C44800D81461 /* SortingEnum.swift in Sources */,
+				0748D60E2AE7C44100D81461 /* RocketView.swift in Sources */,
+				0748D6272AE7C45C00D81461 /* CrewModel.swift in Sources */,
+				0748D6152AE7C45C00D81461 /* Height.swift in Sources */,
+				0748D61E2AE7C45C00D81461 /* Reddit.swift in Sources */,
+				0748D60F2AE7C44100D81461 /* ErrorView.swift in Sources */,
+				0748D6112AE7C44100D81461 /* CrewDetailViewModel.swift in Sources */,
+				0748D6162AE7C45C00D81461 /* Core.swift in Sources */,
+				0748D60A2AE7C43200D81461 /* LaunchesListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0759B4252ADD4CBA00F85613 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1106,6 +1316,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0748D5F62AE7C27E00D81461 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0748D5F22AE7C27E00D81461 /* CodeToShowWatch Watch App */;
+			targetProxy = 0748D5F52AE7C27E00D81461 /* PBXContainerItemProxy */;
+		};
 		0783F5BA2A20B04D001634C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 07B2A8B92A1CC15000B16A4F /* CodeToShow */;
@@ -1119,6 +1334,106 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0748D6012AE7C27F00D81461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44G4QSF9PU;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				INFOPLIST_KEY_CFBundleDisplayName = CodeToShowWatch;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.ladahavlik.CodeToShowWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0748D6022AE7C27F00D81461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44G4QSF9PU;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				INFOPLIST_KEY_CFBundleDisplayName = CodeToShowWatch;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.ladahavlik.CodeToShowWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0748D6042AE7C27F00D81461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 44G4QSF9PU;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CodeToShowWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.ladahavlik.CodeToShowWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		0748D6052AE7C27F00D81461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 44G4QSF9PU;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CodeToShowWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.ladahavlik.CodeToShowWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 		0759B4392ADD4CBB00F85613 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1599,6 +1914,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0748D6062AE7C27F00D81461 /* Build configuration list for PBXNativeTarget "CodeToShowWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0748D6042AE7C27F00D81461 /* Debug */,
+				0748D6052AE7C27F00D81461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0748D6072AE7C27F00D81461 /* Build configuration list for PBXNativeTarget "CodeToShowWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0748D6012AE7C27F00D81461 /* Debug */,
+				0748D6022AE7C27F00D81461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0759B43B2ADD4CBB00F85613 /* Build configuration list for PBXNativeTarget "CodeToShowXr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

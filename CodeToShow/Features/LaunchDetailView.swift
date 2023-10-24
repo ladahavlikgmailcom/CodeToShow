@@ -12,7 +12,7 @@ struct LaunchDetailView: View {
 
     // MARK: - State variables
 
-#if os(visionOS) || os(tvOS)
+#if os(visionOS) || os(tvOS) || os(watchOS)
     private let isLandscape: Bool = false
 #else
     @State private var isLandscape = UIDevice.current.orientation.isLandscape
@@ -49,7 +49,7 @@ struct LaunchDetailView: View {
 #if !os(tvOS)
         .navigationBarTitleDisplayMode(.inline)
 #endif
-#if !os(visionOS) && !os(tvOS)
+#if !os(visionOS) && !os(tvOS) && !os(watchOS)
         .onRotate { isLandscape in
             self.isLandscape = isLandscape
         }
@@ -91,6 +91,7 @@ struct LaunchDetailView: View {
                 Text(details)
             }
         }
+        .frame(maxWidth: .infinity)
     }
 
     @ViewBuilder

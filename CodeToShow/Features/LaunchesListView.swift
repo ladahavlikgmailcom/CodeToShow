@@ -28,11 +28,13 @@ struct LaunchesListView: View {
                 }
             }
             .navigationTitle("Missions")
+#if !os(watchOS)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     toolbarItemContent
                 }
             }
+#endif
             .navigationDestination(for: StarlinkModel.self) { item in
                 LaunchDetailView(data: item)
             }
@@ -53,7 +55,9 @@ struct LaunchesListView: View {
         }
     }
 
+    @ViewBuilder
     var toolbarItemContent: some View {
+#if !os(watchOS)
         Menu {
             Group {
                 ForEach(SortingEnum.allCases, id: \.self) { item in
@@ -63,6 +67,7 @@ struct LaunchesListView: View {
         } label: {
             Image(systemName: "arrow.up.arrow.down.circle")
         }
+#endif
     }
 }
 
