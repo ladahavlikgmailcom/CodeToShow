@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 100;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -324,14 +324,12 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		0748D6032AE7C27F00D81461 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
+			dstSubfolder = Product;
 			files = (
 				0748D5F42AE7C27E00D81461 /* CodeToShowWatch Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -423,59 +421,43 @@
 /* Begin PBXFrameworksBuildPhase section */
 		07310B182AE7CF4E00C84F97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0748D5F02AE7C27E00D81461 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0759B4262ADD4CBA00F85613 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0783F5B02A20B04D001634C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07AF729B2A1F9DE50061A976 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07B2A8B72A1CC15000B16A4F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07CACA442AE67C9D002B7887 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07CACA822AE68036002B7887 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -821,8 +803,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = CodeToShowMac;
 			productName = CodeToShowMac;
 			productReference = 07310B1B2AE7CF4E00C84F97 /* CodeToShowMac.app */;
@@ -855,8 +835,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = "CodeToShowWatch Watch App";
 			productName = "CodeToShowWatch Watch App";
 			productReference = 0748D5F32AE7C27E00D81461 /* CodeToShowWatch Watch App.app */;
@@ -872,11 +850,7 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = CodeToShowXr;
-			packageProductDependencies = (
-			);
 			productName = CodeToShowXr;
 			productReference = 0759B4292ADD4CBA00F85613 /* CodeToShowXr.app */;
 			productType = "com.apple.product-type.application";
@@ -924,15 +898,10 @@
 				07B2A8B62A1CC15000B16A4F /* Sources */,
 				07B2A8B72A1CC15000B16A4F /* Frameworks */,
 				07B2A8B82A1CC15000B16A4F /* Resources */,
-				07F6C54E2A20DAB000D1489C /* ShellScript */,
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = CodeToShow;
-			packageProductDependencies = (
-			);
 			productName = CodeToShow;
 			productReference = 07B2A8BA2A1CC15000B16A4F /* CodeToShow.app */;
 			productType = "com.apple.product-type.application";
@@ -946,8 +915,6 @@
 				07CACA452AE67C9D002B7887 /* Resources */,
 			);
 			buildRules = (
-			);
-			dependencies = (
 			);
 			name = CodeToShowPad;
 			productName = CodeToShowPad;
@@ -964,8 +931,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = CodeToShowTv;
 			productName = CodeToShowTv;
 			productReference = 07CACA852AE68036002B7887 /* CodeToShowTv.app */;
@@ -979,7 +944,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 2640;
 				ORGANIZATIONNAME = LHBnO;
 				TargetAttributes = {
 					07310B1A2AE7CF4E00C84F97 = {
@@ -1014,7 +979,6 @@
 				};
 			};
 			buildConfigurationList = 07B2A8B52A1CC15000B16A4F /* Build configuration list for PBXProject "CodeToShow" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1025,6 +989,7 @@
 			mainGroup = 07B2A8B12A1CC15000B16A4F;
 			packageReferences = (
 			);
+			preferredProjectObjectVersion = 100;
 			productRefGroup = 07B2A8BB2A1CC15000B16A4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1045,112 +1010,72 @@
 /* Begin PBXResourcesBuildPhase section */
 		07310B192AE7CF4E00C84F97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				07310B252AE7CF5000C84F97 /* Preview Assets.xcassets in Resources */,
 				07310B222AE7CF5000C84F97 /* Assets.xcassets in Resources */,
 				07310B4E2AE7D14400C84F97 /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0748D5EC2AE7C27E00D81461 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0748D5F12AE7C27E00D81461 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				0748D6002AE7C27F00D81461 /* Preview Assets.xcassets in Resources */,
 				0748D5FD2AE7C27F00D81461 /* Assets.xcassets in Resources */,
 				0748D6322AE7C47D00D81461 /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0759B4272ADD4CBA00F85613 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				0759B4372ADD4CBB00F85613 /* Preview Assets.xcassets in Resources */,
 				0759B4692ADD5A1100F85613 /* Assets.xcassets in Resources */,
 				0759B4662ADD510500F85613 /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0783F5B12A20B04D001634C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07AF729C2A1F9DE50061A976 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07B2A8B82A1CC15000B16A4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				07B2A8C52A1CC15100B16A4F /* Preview Assets.xcassets in Resources */,
 				07B2A8C22A1CC15100B16A4F /* Assets.xcassets in Resources */,
 				07D2D4782A459C2E00E4BB1F /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07CACA452AE67C9D002B7887 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				07CACA512AE67C9E002B7887 /* Preview Assets.xcassets in Resources */,
 				07CACA4E2AE67C9E002B7887 /* Assets.xcassets in Resources */,
 				07CACA802AE67DCF002B7887 /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07CACA832AE68036002B7887 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				07CACA8F2AE68037002B7887 /* Preview Assets.xcassets in Resources */,
 				07CACA8C2AE68037002B7887 /* Assets.xcassets in Resources */,
 				07CACABE2AE681F4002B7887 /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		07F6C54E2A20DAB000D1489C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/zsh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint --config .swiftlint.yml\nelse\n    echo \"warning: SwiftLint is not installed\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07310B172AE7CF4E00C84F97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				07310B432AE7D14400C84F97 /* StarlinkModel.swift in Sources */,
 				07310B442AE7D14400C84F97 /* LaunchesListViewModel.swift in Sources */,
@@ -1196,11 +1121,9 @@
 				07310B542AE7D14400C84F97 /* RocketView.swift in Sources */,
 				07310B302AE7D14400C84F97 /* ErrorView.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0748D5EF2AE7C27E00D81461 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				0748D62A2AE7C46800D81461 /* ModelLoader.swift in Sources */,
 				0748D6292AE7C45C00D81461 /* ErrorModel.swift in Sources */,
@@ -1246,11 +1169,9 @@
 				0748D6162AE7C45C00D81461 /* Core.swift in Sources */,
 				0748D60A2AE7C43200D81461 /* LaunchesListView.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0759B4252ADD4CBA00F85613 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				0759B43F2ADD500D00F85613 /* Core.swift in Sources */,
 				0759B43C2ADD4F2C00F85613 /* LaunchesListView.swift in Sources */,
@@ -1296,21 +1217,17 @@
 				0759B45F2ADD50E500F85613 /* ModelLoader.swift in Sources */,
 				0759B44C2ADD500D00F85613 /* LandingLeg.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0783F5AF2A20B04D001634C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				0783F5BF2A20BF35001634C7 /* LaunchesListViewUITests.swift in Sources */,
 				0783F5C12A20C618001634C7 /* LaunchDetailViewUITests.swift in Sources */,
 				0783F5B82A20B04D001634C7 /* CodeToShowUITestsLaunchTests.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07AF729A2A1F9DE50061A976 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				07AF72AA2A1FA3440061A976 /* URLRequestExtensionTests.swift in Sources */,
 				0783F5AE2A20ABCE001634C7 /* SortingEnumsTests.swift in Sources */,
@@ -1319,11 +1236,9 @@
 				0783F5AA2A20A94C001634C7 /* ComponentPathsEnumTests.swift in Sources */,
 				078CA2982A2A0F1E009DB6AD /* URLExtensionTests.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07B2A8B62A1CC15000B16A4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				07C92A1B2A2103F700FE55EC /* PayloadWeight.swift in Sources */,
 				07B2A8D92A1CCAF400B16A4F /* JSONDecoderExtension.swift in Sources */,
@@ -1370,11 +1285,9 @@
 				07803AE12A1F5BE100028F45 /* ErrorView.swift in Sources */,
 				07C92A212A21047D00FE55EC /* Engine.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07CACA432AE67C9D002B7887 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				07CACA7A2AE67DB8002B7887 /* ModelLoader.swift in Sources */,
 				07CACA732AE67DA2002B7887 /* LandingLeg.swift in Sources */,
@@ -1421,11 +1334,9 @@
 				07CACA7C2AE67DC7002B7887 /* URLRequestExtension.swift in Sources */,
 				07CACA5E2AE67D78002B7887 /* ErrorView.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07CACA812AE68036002B7887 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				07CACAA42AE681DD002B7887 /* StarlinkModel.swift in Sources */,
 				07CACA9F2AE681DD002B7887 /* CompositeFairing.swift in Sources */,
@@ -1471,7 +1382,6 @@
 				07CACAAB2AE681DD002B7887 /* Patch.swift in Sources */,
 				07CACA9C2AE681C8002B7887 /* ErrorView.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -1494,7 +1404,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07310B272AE7CF5000C84F97 /* Debug */ = {
+		07310B272AE7CF5000C84F97 /* Debug configuration for PBXNativeTarget "CodeToShowMac" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1503,8 +1413,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowMac/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1522,11 +1432,11 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
-		07310B282AE7CF5000C84F97 /* Release */ = {
+		07310B282AE7CF5000C84F97 /* Release configuration for PBXNativeTarget "CodeToShowMac" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1535,8 +1445,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowMac/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1553,17 +1463,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
-		0748D6012AE7C27F00D81461 /* Debug */ = {
+		0748D6012AE7C27F00D81461 /* Debug configuration for PBXNativeTarget "CodeToShowWatch" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				INFOPLIST_KEY_CFBundleDisplayName = CodeToShowWatch;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
@@ -1571,28 +1479,26 @@
 				PRODUCT_BUNDLE_IDENTIFIER = eu.ladahavlik.CodeToShowWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
-		0748D6022AE7C27F00D81461 /* Release */ = {
+		0748D6022AE7C27F00D81461 /* Release configuration for PBXNativeTarget "CodeToShowWatch" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				INFOPLIST_KEY_CFBundleDisplayName = CodeToShowWatch;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.ladahavlik.CodeToShowWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
-		0748D6042AE7C27F00D81461 /* Debug */ = {
+		0748D6042AE7C27F00D81461 /* Debug configuration for PBXNativeTarget "CodeToShowWatch Watch App" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1600,7 +1506,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowWatch Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1619,13 +1524,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
-		0748D6052AE7C27F00D81461 /* Release */ = {
+		0748D6052AE7C27F00D81461 /* Release configuration for PBXNativeTarget "CodeToShowWatch Watch App" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1633,7 +1538,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowWatch Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1651,13 +1555,13 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
-		0759B4392ADD4CBB00F85613 /* Debug */ = {
+		0759B4392ADD4CBB00F85613 /* Debug configuration for PBXNativeTarget "CodeToShowXr" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1665,7 +1569,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowXr/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1684,13 +1587,13 @@
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
-		0759B43A2ADD4CBB00F85613 /* Release */ = {
+		0759B43A2ADD4CBB00F85613 /* Release configuration for PBXNativeTarget "CodeToShowXr" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1698,7 +1601,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowXr/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1716,18 +1618,17 @@
 				SDKROOT = xros;
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
-		0783F5BB2A20B04D001634C7 /* Debug */ = {
+		0783F5BB2A20B04D001634C7 /* Debug configuration for PBXNativeTarget "CodeToShowUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cz.ladahavlik.CodeToShowUITests;
@@ -1737,18 +1638,17 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = CodeToShow;
 			};
 			name = Debug;
 		};
-		0783F5BC2A20B04D001634C7 /* Release */ = {
+		0783F5BC2A20B04D001634C7 /* Release configuration for PBXNativeTarget "CodeToShowUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cz.ladahavlik.CodeToShowUITests;
@@ -1758,19 +1658,18 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = CodeToShow;
 			};
 			name = Release;
 		};
-		07AF72A42A1F9DE50061A976 /* Debug */ = {
+		07AF72A42A1F9DE50061A976 /* Debug configuration for PBXNativeTarget "CodeToShowTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cz.ladahavlik.CodeToShowTests;
@@ -1780,19 +1679,18 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeToShow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodeToShow";
 			};
 			name = Debug;
 		};
-		07AF72A52A1F9DE50061A976 /* Release */ = {
+		07AF72A52A1F9DE50061A976 /* Release configuration for PBXNativeTarget "CodeToShowTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cz.ladahavlik.CodeToShowTests;
@@ -1802,13 +1700,13 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeToShow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodeToShow";
 			};
 			name = Release;
 		};
-		07B2A8C62A1CC15100B16A4F /* Debug */ = {
+		07B2A8C62A1CC15100B16A4F /* Debug configuration for PBXProject "CodeToShow" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1844,6 +1742,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -1866,12 +1765,14 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
-		07B2A8C72A1CC15100B16A4F /* Release */ = {
+		07B2A8C72A1CC15100B16A4F /* Release configuration for PBXProject "CodeToShow" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1907,6 +1808,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -1922,13 +1824,15 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		07B2A8C92A1CC15100B16A4F /* Debug */ = {
+		07B2A8C92A1CC15100B16A4F /* Debug configuration for PBXNativeTarget "CodeToShow" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1936,7 +1840,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShow/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1960,12 +1863,12 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		07B2A8CA2A1CC15100B16A4F /* Release */ = {
+		07B2A8CA2A1CC15100B16A4F /* Release configuration for PBXNativeTarget "CodeToShow" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1973,7 +1876,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShow/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1997,12 +1899,12 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		07CACA532AE67C9E002B7887 /* Debug */ = {
+		07CACA532AE67C9E002B7887 /* Debug configuration for PBXNativeTarget "CodeToShowPad" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2010,7 +1912,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowPad/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2033,12 +1934,12 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
-		07CACA542AE67C9E002B7887 /* Release */ = {
+		07CACA542AE67C9E002B7887 /* Release configuration for PBXNativeTarget "CodeToShowPad" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2046,7 +1947,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowPad/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2068,12 +1968,12 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
-		07CACA912AE68037002B7887 /* Debug */ = {
+		07CACA912AE68037002B7887 /* Debug configuration for PBXNativeTarget "CodeToShowTv" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -2081,7 +1981,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowTv/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2098,13 +1997,13 @@
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Debug;
 		};
-		07CACA922AE68037002B7887 /* Release */ = {
+		07CACA922AE68037002B7887 /* Release configuration for PBXNativeTarget "CodeToShowTv" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
@@ -2112,7 +2011,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeToShowTv/Preview Content\"";
-				DEVELOPMENT_TEAM = 44G4QSF9PU;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2128,7 +2026,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 17.0;
 			};
@@ -2140,91 +2038,81 @@
 		07310B292AE7CF5000C84F97 /* Build configuration list for PBXNativeTarget "CodeToShowMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07310B272AE7CF5000C84F97 /* Debug */,
-				07310B282AE7CF5000C84F97 /* Release */,
+				07310B272AE7CF5000C84F97 /* Debug configuration for PBXNativeTarget "CodeToShowMac" */,
+				07310B282AE7CF5000C84F97 /* Release configuration for PBXNativeTarget "CodeToShowMac" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		0748D6062AE7C27F00D81461 /* Build configuration list for PBXNativeTarget "CodeToShowWatch Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0748D6042AE7C27F00D81461 /* Debug */,
-				0748D6052AE7C27F00D81461 /* Release */,
+				0748D6042AE7C27F00D81461 /* Debug configuration for PBXNativeTarget "CodeToShowWatch Watch App" */,
+				0748D6052AE7C27F00D81461 /* Release configuration for PBXNativeTarget "CodeToShowWatch Watch App" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		0748D6072AE7C27F00D81461 /* Build configuration list for PBXNativeTarget "CodeToShowWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0748D6012AE7C27F00D81461 /* Debug */,
-				0748D6022AE7C27F00D81461 /* Release */,
+				0748D6012AE7C27F00D81461 /* Debug configuration for PBXNativeTarget "CodeToShowWatch" */,
+				0748D6022AE7C27F00D81461 /* Release configuration for PBXNativeTarget "CodeToShowWatch" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		0759B43B2ADD4CBB00F85613 /* Build configuration list for PBXNativeTarget "CodeToShowXr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0759B4392ADD4CBB00F85613 /* Debug */,
-				0759B43A2ADD4CBB00F85613 /* Release */,
+				0759B4392ADD4CBB00F85613 /* Debug configuration for PBXNativeTarget "CodeToShowXr" */,
+				0759B43A2ADD4CBB00F85613 /* Release configuration for PBXNativeTarget "CodeToShowXr" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		0783F5BD2A20B04D001634C7 /* Build configuration list for PBXNativeTarget "CodeToShowUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0783F5BB2A20B04D001634C7 /* Debug */,
-				0783F5BC2A20B04D001634C7 /* Release */,
+				0783F5BB2A20B04D001634C7 /* Debug configuration for PBXNativeTarget "CodeToShowUITests" */,
+				0783F5BC2A20B04D001634C7 /* Release configuration for PBXNativeTarget "CodeToShowUITests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		07AF72A62A1F9DE50061A976 /* Build configuration list for PBXNativeTarget "CodeToShowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07AF72A42A1F9DE50061A976 /* Debug */,
-				07AF72A52A1F9DE50061A976 /* Release */,
+				07AF72A42A1F9DE50061A976 /* Debug configuration for PBXNativeTarget "CodeToShowTests" */,
+				07AF72A52A1F9DE50061A976 /* Release configuration for PBXNativeTarget "CodeToShowTests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		07B2A8B52A1CC15000B16A4F /* Build configuration list for PBXProject "CodeToShow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07B2A8C62A1CC15100B16A4F /* Debug */,
-				07B2A8C72A1CC15100B16A4F /* Release */,
+				07B2A8C62A1CC15100B16A4F /* Debug configuration for PBXProject "CodeToShow" */,
+				07B2A8C72A1CC15100B16A4F /* Release configuration for PBXProject "CodeToShow" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		07B2A8C82A1CC15100B16A4F /* Build configuration list for PBXNativeTarget "CodeToShow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07B2A8C92A1CC15100B16A4F /* Debug */,
-				07B2A8CA2A1CC15100B16A4F /* Release */,
+				07B2A8C92A1CC15100B16A4F /* Debug configuration for PBXNativeTarget "CodeToShow" */,
+				07B2A8CA2A1CC15100B16A4F /* Release configuration for PBXNativeTarget "CodeToShow" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		07CACA522AE67C9E002B7887 /* Build configuration list for PBXNativeTarget "CodeToShowPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07CACA532AE67C9E002B7887 /* Debug */,
-				07CACA542AE67C9E002B7887 /* Release */,
+				07CACA532AE67C9E002B7887 /* Debug configuration for PBXNativeTarget "CodeToShowPad" */,
+				07CACA542AE67C9E002B7887 /* Release configuration for PBXNativeTarget "CodeToShowPad" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		07CACA902AE68037002B7887 /* Build configuration list for PBXNativeTarget "CodeToShowTv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07CACA912AE68037002B7887 /* Debug */,
-				07CACA922AE68037002B7887 /* Release */,
+				07CACA912AE68037002B7887 /* Debug configuration for PBXNativeTarget "CodeToShowTv" */,
+				07CACA922AE68037002B7887 /* Release configuration for PBXNativeTarget "CodeToShowTv" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
