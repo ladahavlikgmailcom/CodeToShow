@@ -22,7 +22,7 @@ struct ErrorView: View {
             data.errorPicture
                 .resizable()
                 .scaledToFit()
-                .foregroundColor(.accentColor)
+                .foregroundStyle(Color.accentColor)
                 .frame(maxWidth: 100, maxHeight: 100)
             Text(data.errorText)
                 .font(.headline)

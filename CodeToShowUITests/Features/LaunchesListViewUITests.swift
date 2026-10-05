@@ -8,11 +8,12 @@
 
 import XCTest
 
+@MainActor
 final class LaunchesListViewUITests: XCTestCase {
 
     var app: XCUIApplication = XCUIApplication()
 
-    override func setUpWithError() throws {
+    override func setUp() async throws {
         continueAfterFailure = false
         app.launch()
     }

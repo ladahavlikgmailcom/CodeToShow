@@ -8,6 +8,7 @@
 
 import XCTest
 
+@MainActor
 final class CodeToShowUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {

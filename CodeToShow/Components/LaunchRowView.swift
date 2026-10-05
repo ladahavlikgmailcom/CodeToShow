@@ -41,7 +41,7 @@ struct LaunchRowView: View {
         } placeholder: {
             Image(systemName: "slash.circle")
                 .resizable()
-                .foregroundColor(.gray)
+                .foregroundStyle(.gray)
         }
     }
 
