@@ -11,29 +11,25 @@ import XCTest
 
 final class URLRequestExtensionTests: XCTestCase {
 
-    let exampleId: String = "StarlinkUUIID"
+    let exampleId: String = "LaunchUUID"
 
-    func testCreateRequestLaunches() throws {
-        let urlRequest = URLRequest.createRequest(path: .launches)
-
-        XCTAssertNotNil(urlRequest)
-        XCTAssertNotNil(urlRequest?.url)
-        XCTAssertEqual(urlRequest?.httpMethod, "GET")
-    }
-
-    func testCreateRequestCrew() throws {
-        let urlRequest = URLRequest.createRequest(path: .crew, id: exampleId)
+    func testCreateRequestPreviousLaunches() throws {
+        let urlRequest = URLRequest.createRequest(path: .previousLaunches)
 
         XCTAssertNotNil(urlRequest)
         XCTAssertNotNil(urlRequest?.url)
         XCTAssertEqual(urlRequest?.httpMethod, "GET")
     }
 
-    func testCreateRequestRockets() throws {
-        let urlRequest = URLRequest.createRequest(path: .rockets, id: exampleId)
+    func testCreateRequestLaunchDetail() throws {
+        let urlRequest = URLRequest.createRequest(
+            path: .launches,
+            id: exampleId,
+            queryItems: [URLQueryItem(name: "mode", value: "detailed")]
+        )
 
         XCTAssertNotNil(urlRequest)
-        XCTAssertNotNil(urlRequest?.url)
+        XCTAssertEqual(urlRequest?.url?.query, "mode=detailed")
         XCTAssertEqual(urlRequest?.httpMethod, "GET")
     }
 }

@@ -6,11 +6,12 @@
 //  Copyright © 2023 LHBnO. All rights reserved.
 //
 
-import SwiftUI
+import Foundation
 
 /// Set of usable paths in API
 enum ComponentPathsEnum: String {
-    case launches = "/v5/launches/"
-    case rockets = "/v4/rockets/"
-    case crew = "/v4/crew/"
+    /// Detail of a launch, the identifier of the launch is added to the path.
+    case launches = "/2.3.0/launches/"
+    /// List of launches which already happened.
+    case previousLaunches = "/2.3.0/launches/previous/"
 }

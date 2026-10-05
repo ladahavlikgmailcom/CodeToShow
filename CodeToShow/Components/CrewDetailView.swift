@@ -10,36 +10,25 @@ import SwiftUI
 
 struct CrewDetailView: View {
 
-    // MARK: - View Model
+    // MARK: - Local variables
 
-    var vm: CrewDetailViewModel
-
-    // MARK: - Initializer
-
-    init(crew: Crew) {
-        self.vm = CrewDetailViewModel(crew: crew)
-    }
-
-    // preview initializer
-    init(data: CrewModel) {
-        self.vm = CrewDetailViewModel(data: data)
-    }
+    let member: CrewMember
 
     // MARK: - Body part
 
     var body: some View {
-        if let data = vm.data {
-            VStack(alignment: .leading) {
-                Text(vm.crew.role)
-                    .font(.headline)
-                AsyncImage(url: vm.data?.image) { asyncImage in
-                    asyncImage.image?
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                }
-                LabeledContent("Name", value: data.name)
-                LabeledContent("Agency", value: data.agency)
+        VStack(alignment: .leading) {
+            Text(member.role.role)
+                .font(.headline)
+            AsyncImage(url: member.astronaut.image?.url) { asyncImage in
+                asyncImage.image?
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+            }
+            LabeledContent("Name", value: member.astronaut.name)
+            if let agency = member.astronaut.agency {
+                LabeledContent("Agency", value: agency.name)
             }
         }
     }
@@ -48,6 +37,8 @@ struct CrewDetailView: View {
 // MARK: - Previews
 
 #Preview {
-    CrewDetailView(data: CrewModel.mock())
-        .padding()
+    if let member = LaunchModel.mock().crew.first {
+        CrewDetailView(member: member)
+            .padding()
+    }
 }

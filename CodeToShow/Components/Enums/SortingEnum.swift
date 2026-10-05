@@ -12,8 +12,6 @@ import SwiftUI
 enum SortingEnum: String, CaseIterable {
     case nameAscending = "Name Asc"
     case nameDescending = "Name Desc"
-    case flightNumberAscending = "Flight Number Asc"
-    case flightNumberDescending = "Flight Number Desc"
     case dateAscending = "Date Asc"
     case dateDescending = "Date Desc"
 
@@ -23,10 +21,6 @@ enum SortingEnum: String, CaseIterable {
             "Name Asc".localized()
         case .nameDescending:
             "Name Desc".localized()
-        case .flightNumberAscending:
-            "Flight Number Asc".localized()
-        case .flightNumberDescending:
-            "Flight Number Desc".localized()
         case .dateAscending:
             "Date Asc".localized()
         case .dateDescending:

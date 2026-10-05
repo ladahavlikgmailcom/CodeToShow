@@ -11,47 +11,36 @@ import XCTest
 
 final class URLExtensionTests: XCTestCase {
 
-    let exampleId: String = "StarlinkUUIID"
+    let exampleId: String = "LaunchUUID"
 
-    func testCreateLaunchesURL() throws {
-        let url = URL.createURL(path: .launches)
+    func testCreatePreviousLaunchesURL() throws {
+        let url = try XCTUnwrap(URL.createURL(path: .previousLaunches))
+        let urlString = url.absoluteString
 
-        XCTAssertNotNil(url)
-
-        if let url = url?.absoluteString {
-            XCTAssertTrue(url.hasPrefix("https"))
-            XCTAssertTrue(url.contains(ComponentPathsEnum.launches.rawValue))
-            XCTAssertFalse(url.contains(ComponentPathsEnum.crew.rawValue))
-            XCTAssertFalse(url.contains(ComponentPathsEnum.rockets.rawValue))
-            XCTAssertFalse(url.hasSuffix(exampleId))
-        }
+        XCTAssertTrue(urlString.hasPrefix("https://\(URL.apiHost)"))
+        XCTAssertTrue(urlString.contains(ComponentPathsEnum.previousLaunches.rawValue))
+        XCTAssertNil(url.query)
     }
 
-    func testCreateCrewURL() throws {
-        let url = URL.createURL(path: .crew, id: exampleId)
+    func testCreateLaunchDetailURL() throws {
+        let url = try XCTUnwrap(URL.createURL(path: .launches, id: exampleId))
+        let urlString = url.absoluteString
 
-        XCTAssertNotNil(url)
-
-        if let url = url?.absoluteString {
-            XCTAssertTrue(url.hasPrefix("https"))
-            XCTAssertFalse(url.contains(ComponentPathsEnum.launches.rawValue))
-            XCTAssertTrue(url.contains(ComponentPathsEnum.crew.rawValue))
-            XCTAssertFalse(url.contains(ComponentPathsEnum.rockets.rawValue))
-            XCTAssertTrue(url.hasSuffix(exampleId))
-        }
+        XCTAssertTrue(urlString.hasPrefix("https"))
+        XCTAssertTrue(urlString.contains(ComponentPathsEnum.launches.rawValue))
+        XCTAssertFalse(urlString.contains(ComponentPathsEnum.previousLaunches.rawValue))
+        XCTAssertTrue(urlString.hasSuffix("\(exampleId)/"))
     }
 
-    func testCreateRocketURL() throws {
-        let url = URL.createURL(path: .rockets, id: exampleId)
+    func testCreateURLWithQueryItems() throws {
+        let url = try XCTUnwrap(
+            URL.createURL(
+                path: .launches,
+                id: exampleId,
+                queryItems: [URLQueryItem(name: "mode", value: "detailed")]
+            )
+        )
 
-        XCTAssertNotNil(url)
-
-        if let url = url?.absoluteString {
-            XCTAssertTrue(url.hasPrefix("https"))
-            XCTAssertFalse(url.contains(ComponentPathsEnum.launches.rawValue))
-            XCTAssertFalse(url.contains(ComponentPathsEnum.crew.rawValue))
-            XCTAssertTrue(url.contains(ComponentPathsEnum.rockets.rawValue))
-            XCTAssertTrue(url.hasSuffix(exampleId))
-        }
+        XCTAssertEqual(url.query, "mode=detailed")
     }
 }

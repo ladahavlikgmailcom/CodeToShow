@@ -10,6 +10,8 @@
     "supported": [
       "Base",
       "cs",
+      "fr",
+      "it",
     ],
   },
   "files": [
@@ -52,15 +54,8 @@
                 "CodeToShowWatch Watch App/compile-sources",
                 "CodeToShowMac/compile-sources",
               ],
-            },
-          ],
-        }, {
-          "kind": "group",
-          "path": "Components",
-          "children": [
-            {
-              "path": "CrewDetailView.swift",
-              "encoding": "utf8",
+            }, {
+              "path": "LaunchDetailViewModel.swift",
               "target-membership": [
                 "CodeToShow/compile-sources",
                 "CodeToShowXr/compile-sources",
@@ -69,8 +64,14 @@
                 "CodeToShowWatch Watch App/compile-sources",
                 "CodeToShowMac/compile-sources",
               ],
-            }, {
-              "path": "CrewDetailViewModel.swift",
+            },
+          ],
+        }, {
+          "kind": "group",
+          "path": "Components",
+          "children": [
+            {
+              "path": "CrewDetailView.swift",
               "encoding": "utf8",
               "target-membership": [
                 "CodeToShow/compile-sources",
@@ -123,17 +124,6 @@
                 "CodeToShowMac/compile-sources",
               ],
             }, {
-              "path": "RocketViewModel.swift",
-              "encoding": "utf8",
-              "target-membership": [
-                "CodeToShow/compile-sources",
-                "CodeToShowXr/compile-sources",
-                "CodeToShowPad/compile-sources",
-                "CodeToShowTv/compile-sources",
-                "CodeToShowWatch Watch App/compile-sources",
-                "CodeToShowMac/compile-sources",
-              ],
-            }, {
               "kind": "group",
               "path": "Enums",
               "children": [
@@ -168,224 +158,6 @@
           "path": "Models",
           "children": [
             {
-              "kind": "group",
-              "path": "ModelSubclasses",
-              "children": [
-                {
-                  "path": "CompositeFairing.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Core.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Crew.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Engine.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Failure.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Fairing.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "FirstStage.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Flickr.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Height.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Isp.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "LandingLeg.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Link.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Mass.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Patch.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Payload.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "PayloadWeight.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Reddit.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "SecondStage.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                }, {
-                  "path": "Thrust.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowXr/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                    "CodeToShowTv/compile-sources",
-                    "CodeToShowWatch Watch App/compile-sources",
-                    "CodeToShowMac/compile-sources",
-                  ],
-                },
-              ],
-            }, {
-              "path": "CrewModel.swift",
-              "encoding": "utf8",
-              "target-membership": [
-                "CodeToShow/compile-sources",
-                "CodeToShowXr/compile-sources",
-                "CodeToShowPad/compile-sources",
-                "CodeToShowTv/compile-sources",
-                "CodeToShowWatch Watch App/compile-sources",
-                "CodeToShowMac/compile-sources",
-              ],
-            }, {
-              "path": "RocketModel.swift",
-              "encoding": "utf8",
-              "target-membership": [
-                "CodeToShow/compile-sources",
-                "CodeToShowXr/compile-sources",
-                "CodeToShowPad/compile-sources",
-                "CodeToShowTv/compile-sources",
-                "CodeToShowWatch Watch App/compile-sources",
-                "CodeToShowMac/compile-sources",
-              ],
-            }, {
               "path": "ErrorModel.swift",
               "target-membership": [
                 "CodeToShow/compile-sources",
@@ -396,7 +168,17 @@
                 "CodeToShowMac/compile-sources",
               ],
             }, {
-              "path": "StarlinkModel.swift",
+              "path": "LaunchModel.swift",
+              "target-membership": [
+                "CodeToShow/compile-sources",
+                "CodeToShowXr/compile-sources",
+                "CodeToShowPad/compile-sources",
+                "CodeToShowTv/compile-sources",
+                "CodeToShowWatch Watch App/compile-sources",
+                "CodeToShowMac/compile-sources",
+              ],
+            }, {
+              "path": "PageModel.swift",
               "target-membership": [
                 "CodeToShow/compile-sources",
                 "CodeToShowXr/compile-sources",
@@ -517,7 +299,9 @@
             "CodeToShowWatch Watch App/resources",
             "CodeToShowMac/resources",
           ],
-        }, {
+        },
+        { "path": "CodeToShow-InfoPlist.xcstrings", "target-membership": [ "CodeToShow/resources" ] },
+        {
           "kind": "group",
           "path": "Preview Content",
           "children": [
@@ -582,6 +366,7 @@
       "kind": "group",
       "path": "CodeToShowXr",
       "children": [
+        { "path": "InfoPlist.xcstrings", "target-membership": [ "CodeToShowXr/resources" ] },
         { "path": "CodeToShowXrApp.swift", "target-membership": [ "CodeToShowXr/compile-sources" ] },
         { "path": "Info.plist" },
         {
@@ -597,6 +382,7 @@
       "kind": "group",
       "path": "CodeToShowPad",
       "children": [
+        { "path": "CodeToShowPad-InfoPlist.xcstrings", "target-membership": [ "CodeToShowPad/resources" ] },
         { "path": "CodeToShowPadApp.swift", "target-membership": [ "CodeToShowPad/compile-sources" ] },
         { "path": "Assets.xcassets", "target-membership": [ "CodeToShowPad/resources" ] },
         {
@@ -611,6 +397,7 @@
       "kind": "group",
       "path": "CodeToShowTv",
       "children": [
+        { "path": "CodeToShowTv-InfoPlist.xcstrings", "target-membership": [ "CodeToShowTv/resources" ] },
         { "path": "CodeToShowTvApp.swift", "target-membership": [ "CodeToShowTv/compile-sources" ] },
         { "path": "Assets.xcassets", "target-membership": [ "CodeToShowTv/resources" ] },
         {
@@ -625,6 +412,7 @@
       "kind": "group",
       "path": "CodeToShowWatch Watch App",
       "children": [
+        { "path": "CodeToShowWatch Watch App-InfoPlist.xcstrings", "target-membership": [ "CodeToShowWatch Watch App/resources" ] },
         { "path": "CodeToShowWatchApp.swift", "target-membership": [ "CodeToShowWatch Watch App/compile-sources" ] },
         { "path": "Assets.xcassets", "target-membership": [ "CodeToShowWatch Watch App/resources" ] },
         {
@@ -639,6 +427,7 @@
       "kind": "group",
       "path": "CodeToShowMac",
       "children": [
+        { "path": "CodeToShowMac-InfoPlist.xcstrings", "target-membership": [ "CodeToShowMac/resources" ] },
         { "path": "CodeToShowMacApp.swift", "target-membership": [ "CodeToShowMac/compile-sources" ] },
         { "path": "Assets.xcassets", "target-membership": [ "CodeToShowMac/resources" ] },
         { "path": "CodeToShowMac.entitlements" },

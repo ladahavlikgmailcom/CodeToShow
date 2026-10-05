@@ -18,9 +18,19 @@ struct LaunchDetailView: View {
     @State private var isLandscape = UIDevice.current.orientation.isLandscape
 #endif
 
+    // MARK: - ViewModel
+
+    @State private var vm = LaunchDetailViewModel()
+
     // MARK: - Local variables
 
-    let data: StarlinkModel
+    /// Launch from the list, it is shown until the detail is loaded.
+    let data: LaunchModel
+
+    /// Launch with all values which are available.
+    private var launch: LaunchModel {
+        vm.detail ?? data
+    }
 
     // MARK: - Body part
 
@@ -54,13 +64,16 @@ struct LaunchDetailView: View {
             self.isLandscape = isLandscape
         }
 #endif
+        .task {
+            await vm.loadDetail(id: data.id)
+        }
     }
 
     // MARK: Body particles
 
     @ViewBuilder
     var patch: some View {
-        AsyncImage(url: data.links.patch.small) { asyncImage in
+        AsyncImage(url: launch.image?.url) { asyncImage in
             asyncImage.image?
                 .resizable()
                 .scaledToFit()
@@ -77,17 +90,13 @@ struct LaunchDetailView: View {
 
     @ViewBuilder
     var header: some View {
-        Text(data.name)
+        Text(launch.name)
             .font(.title)
             .frame(maxWidth: .infinity)
         VStack(alignment: .leading) {
-            LabeledContent("Date", value: data.dateUtc.formatted())
-            LabeledContent("Flight number", value: "\(data.flightNumber)")
-            if let launchDate = data.staticFireDateUtc {
-                LabeledContent("Launch", value: launchDate.formatted())
-            }
-            LabeledContent("Mission state", value: data.success.handleSuccess())
-            if let details = data.details {
+            LabeledContent("Date", value: launch.net?.formatted() ?? "Not known".localized())
+            LabeledContent("Mission state", value: launch.isSuccess.handleSuccess())
+            if let details = launch.mission?.description, !details.isEmpty {
                 Text(details)
             }
         }
@@ -96,15 +105,15 @@ struct LaunchDetailView: View {
 
     @ViewBuilder
     var crew: some View {
-        if data.crew.count >= 1 {
-            CrewView(crew: data.crew)
+        if !launch.crew.isEmpty {
+            CrewView(crew: launch.crew)
         }
     }
 
     @ViewBuilder
     var rocket: some View {
-        if !data.rocket.isEmpty {
-            RocketView(id: data.rocket)
+        if let configuration = launch.rocket?.configuration {
+            RocketView(configuration: configuration)
         }
     }
 }
@@ -113,6 +122,6 @@ struct LaunchDetailView: View {
 
 #Preview {
     NavigationStack {
-        LaunchDetailView(data: StarlinkModel.mock())
+        LaunchDetailView(data: LaunchModel.mock())
     }
 }

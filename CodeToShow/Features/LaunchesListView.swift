@@ -35,7 +35,7 @@ struct LaunchesListView: View {
                 }
             }
 #endif
-            .navigationDestination(for: StarlinkModel.self) { item in
+            .navigationDestination(for: LaunchModel.self) { item in
                 LaunchDetailView(data: item)
             }
         }
@@ -47,9 +47,12 @@ struct LaunchesListView: View {
 
     var listContent: some View {
         List {
-            ForEach(vm.dataModel, id: \.id) { item in
+            ForEach(vm.dataModel) { item in
                 NavigationLink(value: item) {
                     LaunchRowView(data: item)
+                }
+                .onAppear {
+                    vm.loadMoreIfNeeded(current: item)
                 }
             }
         }

@@ -7,15 +7,11 @@
 //
 
 import SwiftUI
-import Combine
 
 /// Calling API and decode data in to desired model.
-class ModelLoader<Model: Decodable> {
+struct ModelLoader<Model: Decodable> {
 
     // MARK: - Local Variables
-
-    // Returning structure
-    typealias FutureHandler = Future<Model, ErrorModel>
 
     // API Path
     var path: ComponentPathsEnum
@@ -30,53 +26,50 @@ class ModelLoader<Model: Decodable> {
 
     // MARK: - Load data
 
-    /// Load data from API
-    /// - Parameter id: Optional identifier of desired data.
-    /// - Returns: Publisher with data or error from API or decoding data.
-    func loadModel(id: String? = nil) -> FutureHandler {
-        Future { [weak self] promise in
-            guard let self, let urlRequest = URLRequest.createRequest(path: path, id: id) else {
-                promise(
-                    .failure(
-                        ErrorModel(
-                            errorPicture: Image(systemName: "questionmark.circle.fill"),
-                            errorText: "Appear unexpected error in loading model."
-                        )
-                    )
-                )
-                return
-            }
-
-            Networking().callAPI(urlRequest: urlRequest) { [weak self] result in
-                guard let self else { return }
-                switch result {
-                case .success(let data):
-                    self.decodeData(data: data, promise: promise)
-                case .failure(let errorModel):
-                    promise(.failure(errorModel))
-                }
-            }
+    /// Load data from API and decode them in to the model.
+    /// - Parameters:
+    ///   - id: Optional identifier of desired data.
+    ///   - queryItems: Optional query parameters of the request.
+    /// - Returns: Decoded model.
+    /// - Throws: ``ErrorModel`` when the request, the communication or the decoding fails.
+    func loadModel(id: String? = nil, queryItems: [URLQueryItem] = []) async throws(ErrorModel) -> Model {
+        guard let urlRequest = URLRequest.createRequest(path: path, id: id, queryItems: queryItems) else {
+            throw ErrorModel(
+                errorPicture: Image(systemName: "questionmark.circle.fill"),
+                errorText: "Appear unexpected error in loading model."
+            )
         }
+        return try await load(urlRequest: urlRequest)
+    }
+
+    /// Load data from a complete address, for example the next page of a list.
+    /// - Parameter url: Complete address of the request.
+    /// - Returns: Decoded model.
+    /// - Throws: ``ErrorModel`` when the communication or the decoding fails.
+    func loadModel(url: URL) async throws(ErrorModel) -> Model {
+        try await load(urlRequest: URLRequest(url: url))
+    }
+
+    // MARK: - Private
+
+    private func load(urlRequest: URLRequest) async throws(ErrorModel) -> Model {
+        let data = try await Networking().callAPI(urlRequest: urlRequest)
+        return try decodeData(data: data)
     }
 
     // MARK: - Decoding data
 
     /// Decode Data into application Model
-    /// - Parameters:
-    ///   - data: Data fetched from API.
-    ///   - promise: Result for send decoded object to publisher.
-    private func decodeData(data: Data, promise: (Result<Model, ErrorModel>) -> Void) {
+    /// - Parameter data: Data fetched from API.
+    /// - Returns: Decoded model.
+    /// - Throws: ``ErrorModel`` when the data can not be decoded.
+    private func decodeData(data: Data) throws(ErrorModel) -> Model {
         do {
-            let model = try JSONDecoder.spaceXDecoder().decode(Model.self, from: data)
-            promise(.success(model))
+            return try JSONDecoder.launchLibraryDecoder().decode(Model.self, from: data)
         } catch {
-            promise(
-                .failure(
-                    ErrorModel(
-                        errorPicture: Image(systemName: "exclamationmark.triangle.fill"),
-                        errorText: "Error in decoding data."
-                    )
-                )
+            throw ErrorModel(
+                errorPicture: Image(systemName: "exclamationmark.triangle.fill"),
+                errorText: "Error in decoding data."
             )
         }
     }

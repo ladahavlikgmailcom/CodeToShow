@@ -9,35 +9,31 @@
 import SwiftUI
 
 /// Part where application contact API.
-class Networking {
+struct Networking {
 
-    /// Provide call to API by Request and return data of error
-    /// - Parameters:
-    ///   - urlRequest: Direction to API with created full information where are data to fetch.
-    ///   - result: Return fetched data or error from asynchronous data task.
-    func callAPI(urlRequest: URLRequest, result: @escaping (Result<Data, ErrorModel>) -> Void) {
-        URLSession.shared.dataTask(with: urlRequest) { (data, _, error) in
-            if let error {
-                result(
-                    .failure(
-                        ErrorModel(
-                            errorPicture: Image(systemName: "wifi.exclamationmark"),
-                            errorText: error.localizedDescription
-                        )
-                    )
-                )
-            } else if let data {
-                result(.success(data))
-            } else {
-                result(
-                    .failure(
-                        ErrorModel(
-                            errorPicture: Image(systemName: "questionmark.circle.fill"),
-                            errorText: "Appear unexpected error in communication, try it later."
-                        )
-                    )
-                )
-            }
-        }.resume()
+    /// Provide call to API by Request and return data or throw error.
+    /// - Parameter urlRequest: Direction to API with created full information where are data to fetch.
+    /// - Returns: Fetched data from asynchronous data task.
+    /// - Throws: ``ErrorModel`` when the communication fails or the server answers with an error status.
+    func callAPI(urlRequest: URLRequest) async throws(ErrorModel) -> Data {
+        let data: Data
+        let response: URLResponse
+        do {
+            (data, response) = try await URLSession.shared.data(for: urlRequest)
+        } catch {
+            throw ErrorModel(
+                errorPicture: Image(systemName: "wifi.exclamationmark"),
+                errorText: error.localizedDescription
+            )
+        }
+
+        // The API limits count of requests (status 429), other error statuses mean a problem on the server.
+        if let httpResponse = response as? HTTPURLResponse, !(200..<300).contains(httpResponse.statusCode) {
+            throw ErrorModel(
+                errorPicture: Image(systemName: "exclamationmark.icloud"),
+                errorText: "Server answered with error status \(httpResponse.statusCode), try it later."
+            )
+        }
+        return data
     }
 }

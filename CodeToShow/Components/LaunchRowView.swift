@@ -12,7 +12,7 @@ struct LaunchRowView: View {
 
     // MARK: - Local variables
 
-    let data: StarlinkModel
+    let data: LaunchModel
 
     // MARK: - Body part
 
@@ -36,8 +36,10 @@ struct LaunchRowView: View {
     // MARK: - Body particles
 
     var smallPatch: some View {
-        AsyncImage(url: data.links.patch.small) { asyncImage in
-            asyncImage.resizable()
+        AsyncImage(url: data.image?.thumbnail) { asyncImage in
+            asyncImage
+                .resizable()
+                .scaledToFit()
         } placeholder: {
             Image(systemName: "slash.circle")
                 .resizable()
@@ -49,9 +51,8 @@ struct LaunchRowView: View {
         VStack(alignment: .leading, spacing: 4) {
             Text(data.name)
                 .font(.title3)
-            Text("Flight number \(data.flightNumber)")
-            Text("Date \(data.dateUtc.formatted())")
-            Text("Mission state \(data.success.handleSuccess())")
+            Text("Date \(data.net?.formatted() ?? "Not known".localized())")
+            Text("Mission state \(data.isSuccess.handleSuccess())")
         }
     }
 }
@@ -59,6 +60,6 @@ struct LaunchRowView: View {
 // MARK: - Previews
 
 #Preview {
-    LaunchRowView(data: StarlinkModel.mock())
+    LaunchRowView(data: LaunchModel.mock())
         .padding()
 }

@@ -14,21 +14,17 @@
             "state" : "translated",
             "value" : "Agency"
           }
-        }
-      }
-    },
-    "Boosters" : {
-      "localizations" : {
-        "cs" : {
+        },
+        "fr" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Boosters"
+            "state" : "machine_translated",
+            "value" : "Agence"
           }
         },
-        "en" : {
+        "it" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Boosters"
+            "state" : "machine_translated",
+            "value" : "Agenzia"
           }
         }
       }
@@ -46,6 +42,18 @@
             "state" : "translated",
             "value" : "Company"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Entreprise"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Azienda"
+          }
         }
       }
     },
@@ -61,6 +69,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Country"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Pays"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Paese"
           }
         }
       }
@@ -78,6 +98,18 @@
             "state" : "translated",
             "value" : "Crew"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Équipage"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Equipaggio"
+          }
         }
       }
     },
@@ -94,6 +126,18 @@
             "state" : "translated",
             "value" : "Date"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Date"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Data"
+          }
         }
       }
     },
@@ -109,6 +153,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Date %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Date %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Data %@"
           }
         }
       }
@@ -127,6 +183,18 @@
             "state" : "translated",
             "value" : "Date Asc"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Date croissante"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Data crescente"
+          }
         }
       }
     },
@@ -143,6 +211,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Date Desc"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Date décroissante"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Data decrescente"
           }
         }
       }
@@ -161,87 +241,17 @@
             "state" : "translated",
             "value" : "Failure"
           }
-        }
-      }
-    },
-    "Flight number" : {
-      "localizations" : {
-        "cs" : {
+        },
+        "fr" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Číslo letu"
+            "state" : "machine_translated",
+            "value" : "échouée"
           }
         },
-        "en" : {
+        "it" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Flight number"
-          }
-        }
-      }
-    },
-    "Flight number %lld" : {
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Číslo letu %lld"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Flight number %lld"
-          }
-        }
-      }
-    },
-    "Flight Number Asc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Číslo letu Vzestupně"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Flight Number Asc"
-          }
-        }
-      }
-    },
-    "Flight Number Desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Číslo letu Sestupně"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Flight Number Desc"
-          }
-        }
-      }
-    },
-    "Launch" : {
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vypuštění"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Launch"
+            "state" : "machine_translated",
+            "value" : "fallita"
           }
         }
       }
@@ -259,6 +269,18 @@
             "state" : "translated",
             "value" : "Mission state"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "État de la mission"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Stato missione"
+          }
         }
       }
     },
@@ -274,6 +296,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mission state %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "État de la mission %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Stato missione %@"
           }
         }
       }
@@ -292,6 +326,18 @@
             "state" : "translated",
             "value" : "Missions"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Missions"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Missioni"
+          }
         }
       }
     },
@@ -307,6 +353,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Name"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Nom"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Nome"
           }
         }
       }
@@ -325,6 +383,18 @@
             "state" : "translated",
             "value" : "Name Asc"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Nom croissant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Nome crescente"
+          }
         }
       }
     },
@@ -341,6 +411,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Name Desc"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Nom décroissant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Nome decrescente"
           }
         }
       }
@@ -359,6 +441,18 @@
             "state" : "translated",
             "value" : "Not known"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "non disponible"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "non disponibile"
+          }
         }
       }
     },
@@ -374,6 +468,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Refresh"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Actualiser"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Aggiorna"
           }
         }
       }
@@ -391,21 +497,17 @@
             "state" : "translated",
             "value" : "Rocket"
           }
-        }
-      }
-    },
-    "Stages" : {
-      "localizations" : {
-        "cs" : {
+        },
+        "fr" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stupně"
+            "state" : "machine_translated",
+            "value" : "Fusée"
           }
         },
-        "en" : {
+        "it" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stages"
+            "state" : "machine_translated",
+            "value" : "Razzo"
           }
         }
       }
@@ -424,9 +526,21 @@
             "state" : "translated",
             "value" : "Success"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "réussie"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "riuscita"
+          }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version" : "1.3"
 }

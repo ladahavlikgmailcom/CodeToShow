@@ -25,19 +25,19 @@ final class LaunchesListViewUITests: XCTestCase {
         missionsNavigationBar.images["Seřadit"].tap()
     }
 
-    func testLaunchesListViewSearchCrew5() throws {
-        searchCrew5()
+    func testLaunchesListViewSearchCrew13() throws {
+        searchCrew13()
     }
 
     func testLaunchesListViewNavigateToDetail() throws {
-        searchCrew5()
-        app.collectionViews.staticTexts["Crew-5"].tap()
-        app.scrollViews.otherElements.staticTexts["Crew-5"].tap()
+        searchCrew13()
+        app.collectionViews.staticTexts["Falcon 9 Block 5 | Crew-13"].tap()
+        app.scrollViews.otherElements.staticTexts["Falcon 9 Block 5 | Crew-13"].tap()
     }
 
-    func searchCrew5() {
+    func searchCrew13() {
         let searchSearchField = app.navigationBars["Mise"].searchFields["Hledat"]
         searchSearchField.tap()
-        searchSearchField.typeText("Crew-5")
+        searchSearchField.typeText("Crew-13")
     }
 }

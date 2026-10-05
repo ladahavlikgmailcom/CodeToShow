@@ -12,7 +12,7 @@ struct CrewView: View {
 
     // MARK: - Local variables
 
-    var crew: [Crew]
+    var crew: [CrewMember]
 
     // MARK: - Body part
 
@@ -21,8 +21,8 @@ struct CrewView: View {
             Text("Crew")
                 .font(.title2)
                 .padding(.bottom)
-            ForEach(crew, id: \.crew) { item in
-                CrewDetailView(crew: item)
+            ForEach(crew) { member in
+                CrewDetailView(member: member)
                     .padding(.bottom)
             }
         }
@@ -33,12 +33,7 @@ struct CrewView: View {
 
 #Preview {
     ScrollView {
-        CrewView(crew: [
-            Crew(crew: "62dd7196202306255024d13c", role: "Commander"),
-            Crew(crew: "62dd71c9202306255024d13d", role: "Pilot"),
-            Crew(crew: "62dd7210202306255024d13e", role: "Mission Specialist 1"),
-            Crew(crew: "62dd7253202306255024d13f", role: "Mission Specialist 2")
-        ])
+        CrewView(crew: LaunchModel.mock().crew)
     }
     .padding()
 }

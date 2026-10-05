@@ -10,40 +10,31 @@ import SwiftUI
 
 struct RocketView: View {
 
-    // MARK: - View Model
+    // MARK: - Local variables
 
-    var vm: RocketViewModel
-
-    // MARK: - Initializer
-
-    init(id: String) {
-        self.vm = RocketViewModel(id: id)
-    }
-
-    // preview initializer
-    init(data: RocketModel) {
-        self.vm = RocketViewModel(data: data)
-    }
+    let configuration: RocketConfiguration
 
     // MARK: - Body part
 
     var body: some View {
-        if let data = vm.data {
-            VStack(alignment: .leading) {
-                Text("Rocket")
-                    .font(.title2)
-                LabeledContent("Name", value: data.name)
-                LabeledContent("Company", value: data.company)
-                LabeledContent("Country", value: data.country)
-                LabeledContent("Stages", value: "\(data.stages)")
-                LabeledContent("Boosters", value: "\(data.boosters)")
-                Text(data.description)
-                AsyncImage(url: vm.data?.flickrImages.first) { asyncImage in
-                    asyncImage.image?
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
+        VStack(alignment: .leading) {
+            Text("Rocket")
+                .font(.title2)
+            LabeledContent("Name", value: configuration.fullName ?? configuration.name)
+            if let manufacturer = configuration.manufacturer {
+                LabeledContent("Company", value: manufacturer.name)
+                if let country = manufacturer.country?.first {
+                    LabeledContent("Country", value: country.name)
                 }
+            }
+            if let description = configuration.description, !description.isEmpty {
+                Text(description)
+            }
+            AsyncImage(url: configuration.image?.url) { asyncImage in
+                asyncImage.image?
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
             }
         }
     }
@@ -52,6 +43,8 @@ struct RocketView: View {
 // MARK: - Previews
 
 #Preview {
-    RocketView(data: RocketModel.mock())
-        .padding()
+    if let configuration = LaunchModel.mock().rocket?.configuration {
+        RocketView(configuration: configuration)
+            .padding()
+    }
 }

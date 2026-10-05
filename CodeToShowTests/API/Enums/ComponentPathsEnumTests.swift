@@ -13,7 +13,11 @@ final class ComponentPathsEnumTests: XCTestCase {
 
     func testNeccessaryValuesInEnum() throws {
         XCTAssertEqual(ComponentPathsEnum.launches, ComponentPathsEnum.launches)
-        XCTAssertEqual(ComponentPathsEnum.rockets, ComponentPathsEnum.rockets)
-        XCTAssertEqual(ComponentPathsEnum.crew, ComponentPathsEnum.crew)
+        XCTAssertEqual(ComponentPathsEnum.previousLaunches, ComponentPathsEnum.previousLaunches)
+    }
+
+    func testPathsValues() throws {
+        XCTAssertEqual(ComponentPathsEnum.launches.rawValue, "/2.3.0/launches/")
+        XCTAssertEqual(ComponentPathsEnum.previousLaunches.rawValue, "/2.3.0/launches/previous/")
     }
 }

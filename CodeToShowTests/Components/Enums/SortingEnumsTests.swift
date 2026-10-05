@@ -14,9 +14,8 @@ final class SortingEnumsTests: XCTestCase {
     func testNeccessaryValuesInEnum() throws {
         XCTAssertEqual(SortingEnum.nameAscending, SortingEnum.nameAscending)
         XCTAssertEqual(SortingEnum.nameDescending, SortingEnum.nameDescending)
-        XCTAssertEqual(SortingEnum.flightNumberAscending, SortingEnum.flightNumberAscending)
-        XCTAssertEqual(SortingEnum.flightNumberDescending, SortingEnum.flightNumberDescending)
         XCTAssertEqual(SortingEnum.dateAscending, SortingEnum.dateAscending)
         XCTAssertEqual(SortingEnum.dateDescending, SortingEnum.dateDescending)
+        XCTAssertEqual(SortingEnum.allCases.count, 4)
     }
 }
