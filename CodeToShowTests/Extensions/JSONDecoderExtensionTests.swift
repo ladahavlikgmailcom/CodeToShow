@@ -6,10 +6,11 @@
 //  Copyright © 2023 LHBnO. All rights reserved.
 //
 
-import XCTest
+import Foundation
+import Testing
 @testable import CodeToShow
 
-final class JSONDecoderExtensionTests: XCTestCase {
+struct JSONDecoderExtensionTests {
 
     struct TestModel: Codable {
         let net: Date
@@ -67,48 +68,50 @@ final class JSONDecoderExtensionTests: XCTestCase {
 }
 """
 
-    func testDecodingWithTestModel() throws {
+    @Test func `Dates with and without fractional seconds are decoded`() throws {
         let decoder = JSONDecoder.launchLibraryDecoder()
-        let data = try XCTUnwrap(jsonToTest.data(using: .utf8))
+        let data = try #require(jsonToTest.data(using: .utf8))
 
         let decodedTestObject = try decoder.decode(TestModel.self, from: data)
 
-        XCTAssertFalse(decodedTestObject.net == Date(timeIntervalSince1970: 0))
-        XCTAssertFalse(decodedTestObject.windowStart == Date(timeIntervalSince1970: 0))
-        XCTAssertEqual(decodedTestObject.net, decodedTestObject.windowStart)
+        #expect(decodedTestObject.net != Date(timeIntervalSince1970: 0))
+        #expect(decodedTestObject.windowStart != Date(timeIntervalSince1970: 0))
+        #expect(decodedTestObject.net == decodedTestObject.windowStart)
     }
 
-    func testDecodingOfWrongDateThrows() throws {
+    @Test func `Wrong date throws an error`() throws {
         let decoder = JSONDecoder.launchLibraryDecoder()
-        let data = try XCTUnwrap(#"{ "net": "yesterday", "window_start": "2022-10-05T16:00:00Z" }"#.data(using: .utf8))
+        let data = try #require(#"{ "net": "yesterday", "window_start": "2022-10-05T16:00:00Z" }"#.data(using: .utf8))
 
-        XCTAssertThrowsError(try decoder.decode(TestModel.self, from: data))
+        #expect(throws: DecodingError.self) {
+            try decoder.decode(TestModel.self, from: data)
+        }
     }
 
-    func testDecodingOfLaunchesPage() throws {
+    @Test func `Page of launches is decoded`() throws {
         let decoder = JSONDecoder.launchLibraryDecoder()
-        let data = try XCTUnwrap(pageToTest.data(using: .utf8))
+        let data = try #require(pageToTest.data(using: .utf8))
 
         let page = try decoder.decode(PageModel<LaunchModel>.self, from: data)
 
-        XCTAssertEqual(page.count, 2)
-        XCTAssertNotNil(page.next)
-        XCTAssertEqual(page.results.count, 2)
+        #expect(page.count == 2)
+        #expect(page.next != nil)
+        #expect(page.results.count == 2)
 
         let launch = page.results[0]
-        XCTAssertEqual(launch.name, "Falcon 9 Block 5 | Crew-12")
-        XCTAssertNotNil(launch.net)
-        XCTAssertEqual(launch.isSuccess, true)
-        XCTAssertEqual(launch.image?.thumbnail, URL(string: "https://example.com/small.jpeg"))
-        XCTAssertEqual(launch.rocket?.configuration.fullName, "Falcon 9 Block 5")
-        XCTAssertEqual(launch.crew.count, 1)
-        XCTAssertEqual(launch.crew.first?.role.role, "Commander")
-        XCTAssertEqual(launch.crew.first?.astronaut.agency?.name, "NASA")
+        #expect(launch.name == "Falcon 9 Block 5 | Crew-12")
+        #expect(launch.net != nil)
+        #expect(launch.isSuccess == true)
+        #expect(launch.image?.thumbnail == URL(string: "https://example.com/small.jpeg"))
+        #expect(launch.rocket?.configuration.fullName == "Falcon 9 Block 5")
+        #expect(launch.crew.count == 1)
+        #expect(launch.crew.first?.role.role == "Commander")
+        #expect(launch.crew.first?.astronaut.agency?.name == "NASA")
 
         let placeholder = page.results[1]
-        XCTAssertNil(placeholder.net)
-        XCTAssertNil(placeholder.isSuccess)
-        XCTAssertTrue(placeholder.crew.isEmpty)
-        XCTAssertNil(placeholder.rocket)
+        #expect(placeholder.net == nil)
+        #expect(placeholder.isSuccess == nil)
+        #expect(placeholder.crew.isEmpty)
+        #expect(placeholder.rocket == nil)
     }
 }

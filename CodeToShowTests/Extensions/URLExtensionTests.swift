@@ -6,34 +6,35 @@
 //  Copyright © 2023 LHBnO. All rights reserved.
 //
 
-import XCTest
+import Foundation
+import Testing
 @testable import CodeToShow
 
-final class URLExtensionTests: XCTestCase {
+struct URLExtensionTests {
 
     let exampleId: String = "LaunchUUID"
 
-    func testCreatePreviousLaunchesURL() throws {
-        let url = try XCTUnwrap(URL.createURL(path: .previousLaunches))
+    @Test func `Previous launches URL has the host and the path`() throws {
+        let url = try #require(URL.createURL(path: .previousLaunches))
         let urlString = url.absoluteString
 
-        XCTAssertTrue(urlString.hasPrefix("https://\(URL.apiHost)"))
-        XCTAssertTrue(urlString.contains(ComponentPathsEnum.previousLaunches.rawValue))
-        XCTAssertNil(url.query)
+        #expect(urlString.hasPrefix("https://\(URL.apiHost)"))
+        #expect(urlString.contains(ComponentPathsEnum.previousLaunches.rawValue))
+        #expect(url.query == nil)
     }
 
-    func testCreateLaunchDetailURL() throws {
-        let url = try XCTUnwrap(URL.createURL(path: .launches, id: exampleId))
+    @Test func `Launch detail URL ends with the identifier`() throws {
+        let url = try #require(URL.createURL(path: .launches, id: exampleId))
         let urlString = url.absoluteString
 
-        XCTAssertTrue(urlString.hasPrefix("https"))
-        XCTAssertTrue(urlString.contains(ComponentPathsEnum.launches.rawValue))
-        XCTAssertFalse(urlString.contains(ComponentPathsEnum.previousLaunches.rawValue))
-        XCTAssertTrue(urlString.hasSuffix("\(exampleId)/"))
+        #expect(urlString.hasPrefix("https"))
+        #expect(urlString.contains(ComponentPathsEnum.launches.rawValue))
+        #expect(!urlString.contains(ComponentPathsEnum.previousLaunches.rawValue))
+        #expect(urlString.hasSuffix("\(exampleId)/"))
     }
 
-    func testCreateURLWithQueryItems() throws {
-        let url = try XCTUnwrap(
+    @Test func `URL contains query items`() throws {
+        let url = try #require(
             URL.createURL(
                 path: .launches,
                 id: exampleId,
@@ -41,6 +42,6 @@ final class URLExtensionTests: XCTestCase {
             )
         )
 
-        XCTAssertEqual(url.query, "mode=detailed")
+        #expect(url.query == "mode=detailed")
     }
 }

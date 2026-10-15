@@ -6,26 +6,23 @@
 //  Copyright © 2023 LHBnO. All rights reserved.
 //
 
-import XCTest
+import Testing
 @testable import CodeToShow
 
-final class BoolExtensionTests: XCTestCase {
+struct BoolExtensionTests {
 
-    func testWithNull() throws {
+    @Test func `Missing value is not known`() {
         let testBool: Bool? = nil
-        let valueString = testBool.handleSuccess()
-        XCTAssertEqual(valueString, "Not known".localized())
+        #expect(testBool.handleSuccess() == "Not known".localized())
     }
 
-    func testWithTrue() throws {
+    @Test func `True is success`() {
         let testBool: Bool? = true
-        let valueString = testBool.handleSuccess()
-        XCTAssertEqual(valueString, "Success".localized())
+        #expect(testBool.handleSuccess() == "Success".localized())
     }
 
-    func testWithFalse() throws {
+    @Test func `False is failure`() {
         let testBool: Bool? = false
-        let valueString = testBool.handleSuccess()
-        XCTAssertEqual(valueString, "Failure".localized())
+        #expect(testBool.handleSuccess() == "Failure".localized())
     }
 }

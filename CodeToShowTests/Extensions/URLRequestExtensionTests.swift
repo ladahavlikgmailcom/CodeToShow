@@ -6,30 +6,31 @@
 //  Copyright © 2023 LHBnO. All rights reserved.
 //
 
-import XCTest
+import Foundation
+import Testing
 @testable import CodeToShow
 
-final class URLRequestExtensionTests: XCTestCase {
+struct URLRequestExtensionTests {
 
     let exampleId: String = "LaunchUUID"
 
-    func testCreateRequestPreviousLaunches() throws {
-        let urlRequest = URLRequest.createRequest(path: .previousLaunches)
+    @Test func `Request for previous launches is a GET`() throws {
+        let urlRequest = try #require(URLRequest.createRequest(path: .previousLaunches))
 
-        XCTAssertNotNil(urlRequest)
-        XCTAssertNotNil(urlRequest?.url)
-        XCTAssertEqual(urlRequest?.httpMethod, "GET")
+        #expect(urlRequest.url != nil)
+        #expect(urlRequest.httpMethod == "GET")
     }
 
-    func testCreateRequestLaunchDetail() throws {
-        let urlRequest = URLRequest.createRequest(
-            path: .launches,
-            id: exampleId,
-            queryItems: [URLQueryItem(name: "mode", value: "detailed")]
+    @Test func `Request for launch detail has the query`() throws {
+        let urlRequest = try #require(
+            URLRequest.createRequest(
+                path: .launches,
+                id: exampleId,
+                queryItems: [URLQueryItem(name: "mode", value: "detailed")]
+            )
         )
 
-        XCTAssertNotNil(urlRequest)
-        XCTAssertEqual(urlRequest?.url?.query, "mode=detailed")
-        XCTAssertEqual(urlRequest?.httpMethod, "GET")
+        #expect(urlRequest.url?.query == "mode=detailed")
+        #expect(urlRequest.httpMethod == "GET")
     }
 }

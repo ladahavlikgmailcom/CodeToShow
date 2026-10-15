@@ -6,16 +6,16 @@
 //  Copyright © 2023 LHBnO. All rights reserved.
 //
 
-import XCTest
+import Testing
 @testable import CodeToShow
 
-final class SortingEnumsTests: XCTestCase {
+struct SortingEnumsTests {
 
-    func testNeccessaryValuesInEnum() throws {
-        XCTAssertEqual(SortingEnum.nameAscending, SortingEnum.nameAscending)
-        XCTAssertEqual(SortingEnum.nameDescending, SortingEnum.nameDescending)
-        XCTAssertEqual(SortingEnum.dateAscending, SortingEnum.dateAscending)
-        XCTAssertEqual(SortingEnum.dateDescending, SortingEnum.dateDescending)
-        XCTAssertEqual(SortingEnum.allCases.count, 4)
+    @Test func `Enum contains the necessary values`() {
+        #expect(SortingEnum.nameAscending == SortingEnum.nameAscending)
+        #expect(SortingEnum.nameDescending == SortingEnum.nameDescending)
+        #expect(SortingEnum.dateAscending == SortingEnum.dateAscending)
+        #expect(SortingEnum.dateDescending == SortingEnum.dateDescending)
+        #expect(SortingEnum.allCases.count == 4)
     }
 }

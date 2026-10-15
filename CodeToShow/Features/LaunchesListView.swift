@@ -12,7 +12,7 @@ struct LaunchesListView: View {
 
     // MARK: - ViewModel
 
-    @Bindable var vm: LaunchesListViewModel = LaunchesListViewModel()
+    @State private var vm = LaunchesListViewModel()
 
     // MARK: - Body part
 
@@ -30,7 +30,7 @@ struct LaunchesListView: View {
             .navigationTitle("Missions")
 #if !os(watchOS) && !os(macOS)
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItem(placement: .topBarTrailing) {
                     toolbarItemContent
                 }
             }
