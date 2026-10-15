@@ -139,18 +139,6 @@
                   ],
                 },
               ],
-            }, {
-              "kind": "group",
-              "path": "ViewModifiers",
-              "children": [
-                {
-                  "path": "DeviceRotationViewModifier.swift",
-                  "target-membership": [
-                    "CodeToShow/compile-sources",
-                    "CodeToShowPad/compile-sources",
-                  ],
-                },
-              ],
             },
           ],
         }, {

@@ -15,7 +15,9 @@ struct LaunchDetailView: View {
 #if os(visionOS) || os(tvOS) || os(watchOS) || os(macOS)
     private let isLandscape: Bool = false
 #else
-    @State private var isLandscape = UIDevice.current.orientation.isLandscape
+    // Updated from the size of the available area, so it follows also folding of the device
+    // and changes of the window size, not only rotation of the device.
+    @State private var isLandscape = false
 #endif
 
     // MARK: - ViewModel
@@ -60,7 +62,9 @@ struct LaunchDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
 #endif
 #if !os(visionOS) && !os(tvOS) && !os(watchOS) && !os(macOS)
-        .onRotate { isLandscape in
+        .onGeometryChange(for: Bool.self) { geometry in
+            geometry.size.width > geometry.size.height
+        } action: { isLandscape in
             self.isLandscape = isLandscape
         }
 #endif
