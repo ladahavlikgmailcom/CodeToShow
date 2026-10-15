@@ -349,6 +349,7 @@
             { "path": "LaunchDetailViewUITests.swift", "target-membership": [ "CodeToShowUITests/compile-sources" ] },
           ],
         },
+        { "path": "XCUIApplicationLaunch.swift", "target-membership": [ "CodeToShowUITests/compile-sources" ] },
       ],
     }, {
       "kind": "group",
